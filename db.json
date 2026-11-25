@@ -1,0 +1,1729 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "title": "iPhone 15",
+      "brand": "Apple",
+      "price": 55000,
+      "category": "Mobiles",
+      "description": "Apple iPhone 15 with 128GB storage.",
+      "stock": 20,
+      "image": null,
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "#252525",
+          "images": []
+        },
+        {
+          "name": "Blue",
+          "hex": "#A7C7E7",
+          "images": []
+        },
+        {
+          "name": "Pink",
+          "hex": "#F4C7D5",
+          "images": []
+        },
+        {
+          "name": "Green",
+          "hex": "#D0E5D2",
+          "images": []
+        },
+        {
+          "name": "Yellow",
+          "hex": "#F5E6A8",
+          "images": []
+        }
+      ],
+      "storageOptions": [
+        {
+          "value": "128GB",
+          "price": 55000,
+          "stock": 20
+        },
+        {
+          "value": "256GB",
+          "price": null,
+          "stock": null
+        },
+        {
+          "value": "512GB",
+          "price": null,
+          "stock": null
+        }
+      ],
+      "specifications": {
+        "Display": "6.1-inch Super Retina XDR OLED",
+        "Resolution": "2556 x 1179",
+        "Processor": "A16 Bionic",
+        "Rear Camera": "48MP Main + 12MP Ultra Wide",
+        "Front Camera": "12MP TrueDepth",
+        "Connectivity": "5G, Wi-Fi 6, Bluetooth 5.3",
+        "Operating System": "iOS",
+        "Water Resistance": "IP68"
+      }
+    },
+    {
+      "id": "2",
+      "title": "Samsung Galaxy S24",
+      "brand": "Samsung",
+      "price": 65000,
+      "category": "Mobiles",
+      "description": "Samsung smartphone",
+      "stock": 8,
+      "image": null,
+      "colors": [
+        {
+          "name": "Onyx Black",
+          "hex": "#252525",
+          "images": []
+        },
+        {
+          "name": "Marble Gray",
+          "hex": "#B8B8B8",
+          "images": []
+        },
+        {
+          "name": "Cobalt Violet",
+          "hex": "#8B7AAE",
+          "images": []
+        },
+        {
+          "name": "Amber Yellow",
+          "hex": "#E8D28B",
+          "images": []
+        }
+      ],
+      "storageOptions": [
+        {
+          "value": "128GB",
+          "price": null,
+          "stock": null
+        },
+        {
+          "value": "256GB",
+          "price": 65000,
+          "stock": 8
+        }
+      ],
+      "specifications": {
+        "Display": "6.2-inch Dynamic AMOLED 2X",
+        "Resolution": "2340 x 1080",
+        "Refresh Rate": "120Hz",
+        "Processor": "Exynos 2400",
+        "Rear Camera": "50MP + 10MP Telephoto + 12MP Ultra Wide",
+        "Front Camera": "12MP",
+        "Battery": "4000mAh",
+        "Connectivity": "5G, Wi-Fi 6E, Bluetooth 5.3",
+        "Operating System": "Android with One UI",
+        "Water Resistance": "IP68"
+      }
+    },
+    {
+      "id": "3",
+      "title": "HP Laptop",
+      "brand": "HP",
+      "price": 45000,
+      "category": "Laptops",
+      "description": "HP laptop with 8GB RAM",
+      "stock": 5,
+      "image": null,
+      "colors": [
+        {
+          "name": "Natural Silver",
+          "hex": "#C0C0C0",
+          "images": []
+        },
+        {
+          "name": "Jet Black",
+          "hex": "#252525",
+          "images": []
+        }
+      ],
+      "storageOptions": [
+        {
+          "value": "256GB SSD",
+          "price": null,
+          "stock": null
+        },
+        {
+          "value": "512GB SSD",
+          "price": null,
+          "stock": null
+        },
+        {
+          "value": "1TB SSD",
+          "price": null,
+          "stock": null
+        }
+      ],
+      "specifications": {
+        "Model": "HP 15 Series",
+        "Display": "15.6-inch Full HD",
+        "Processor": "Configuration Dependent",
+        "RAM": "8GB",
+        "Graphics": "Integrated Intel Graphics",
+        "Operating System": "Windows 11",
+        "Connectivity": "Wi-Fi, Bluetooth"
+      }
+    },
+    {
+      "id": "4",
+      "title": "Sony Headphones",
+      "brand": "Sony",
+      "price": 2500,
+      "category": "Accessories",
+      "description": "Wireless headphones",
+      "stock": 0,
+      "image": "https://sony.scene7.com/is/image/sonyglobalsolutions/00-7?$large360ViewerImage$=",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "#202020",
+          "images": [
+            "https://sony.scene7.com/is/image/sonyglobalsolutions/00-7?$large360ViewerImage$="
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "#F2F2F2",
+          "images": []
+        }
+      ],
+      "specifications": {
+        "Model": "WH-CH520",
+        "Type": "Wireless On-Ear Headphones",
+        "Driver": "30mm",
+        "Bluetooth": "5.2",
+        "Battery Life": "Up to 50 Hours",
+        "Charging": "USB-C",
+        "Microphone": "Built-in"
+      }
+    },
+    {
+      "id": "11",
+      "title": "Wireless Headphones",
+      "brand": "JBL",
+      "price": 2499,
+      "category": "Accessories",
+      "description": "Premium wireless headphones with clear sound.",
+      "stock": 15,
+      "image": "https://in.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw838c5c35/2.JBL_Tune_770NC_Product%20Image_Front_Black.png?sh=535&sw=535",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "#202020",
+          "images": [
+            "https://in.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw838c5c35/2.JBL_Tune_770NC_Product%20Image_Front_Black.png?sh=535&sw=535"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "#F2F2F2",
+          "images": []
+        }
+      ],
+      "specifications": {
+        "Model": "JBL Tune 770NC",
+        "Type": "Wireless Over-Ear Headphones",
+        "Driver": "40mm",
+        "Bluetooth": "5.3",
+        "Noise Cancellation": "Adaptive Noise Cancelling",
+        "Battery Life": "Up to 70 Hours",
+        "Charging": "USB-C",
+        "Audio": "JBL Pure Bass"
+      }
+    },
+    {
+      "id": "12",
+      "title": "Smart Watch",
+      "brand": "Samsung",
+      "price": 1999,
+      "category": "Accessories",
+      "description": "Stylish smartwatch for everyday use.",
+      "stock": 12,
+      "image": null,
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "#252525",
+          "images": []
+        },
+        {
+          "name": "Silver",
+          "hex": "#C0C0C0",
+          "images": []
+        }
+      ],
+      "specifications": {
+        "Model": "Galaxy Watch FE 40mm",
+        "Display": "1.2-inch Super AMOLED",
+        "Resolution": "396 x 396",
+        "Processor": "Exynos W920",
+        "RAM": "1.5GB",
+        "Storage": "16GB",
+        "Battery": "247mAh",
+        "Operating System": "Wear OS"
+      }
+    },
+    {
+      "id": "13",
+      "title": "iPhone 16",
+      "brand": "Apple",
+      "price": 69900,
+      "category": "Mobiles",
+      "description": "Apple iPhone 16 with 128GB storage, A18 chip and advanced camera system.",
+      "stock": 12,
+      "image": "https://res.cloudinary.com/telia-pim/image/upload/v1725969455/pood/apple/nutitelefonid/iphone-16/sinine/128-gb/myec3hxa/apple-iphone-16-nutitelefon-sinine-eest-tagant-koos.png",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "#252525",
+          "images": []
+        },
+        {
+          "name": "White",
+          "hex": "#F2F2F2",
+          "images": []
+        },
+        {
+          "name": "Pink",
+          "hex": "#F4C7D5",
+          "images": []
+        },
+        {
+          "name": "Teal",
+          "hex": "#8FBDB5",
+          "images": [
+            "https://res.cloudinary.com/telia-pim/image/upload/v1725969455/pood/apple/nutitelefonid/iphone-16/sinine/128-gb/myec3hxa/apple-iphone-16-nutitelefon-sinine-eest-tagant-koos.png"
+          ]
+        },
+        {
+          "name": "Ultramarine",
+          "hex": "#405B9A",
+          "images": []
+        }
+      ],
+      "storageOptions": [
+        {
+          "value": "128GB",
+          "price": 69900,
+          "stock": 12
+        },
+        {
+          "value": "256GB",
+          "price": null,
+          "stock": null
+        },
+        {
+          "value": "512GB",
+          "price": null,
+          "stock": null
+        }
+      ],
+      "specifications": {
+        "Display": "6.1-inch Super Retina XDR OLED",
+        "Resolution": "2556 x 1179",
+        "Processor": "A18",
+        "Rear Camera": "48MP Fusion + 12MP Ultra Wide",
+        "Front Camera": "12MP TrueDepth",
+        "Connectivity": "5G, Wi-Fi 7, Bluetooth 5.3",
+        "Operating System": "iOS",
+        "Water Resistance": "IP68"
+      }
+    },
+    {
+      "id": "14",
+      "title": "iPhone 16 Pro",
+      "brand": "Apple",
+      "price": 119900,
+      "category": "Mobiles",
+      "description": "Apple iPhone 16 Pro with 256GB storage and professional camera features.",
+      "stock": 8,
+      "image": null,
+      "colors": [
+        {
+          "name": "Black Titanium",
+          "hex": "#454545",
+          "images": []
+        },
+        {
+          "name": "White Titanium",
+          "hex": "#D8D8D8",
+          "images": []
+        },
+        {
+          "name": "Natural Titanium",
+          "hex": "#A9A49B",
+          "images": []
+        },
+        {
+          "name": "Desert Titanium",
+          "hex": "#BFA58B",
+          "images": []
+        }
+      ],
+      "storageOptions": [
+        {
+          "value": "128GB",
+          "price": null,
+          "stock": null
+        },
+        {
+          "value": "256GB",
+          "price": 119900,
+          "stock": 8
+        },
+        {
+          "value": "512GB",
+          "price": null,
+          "stock": null
+        },
+        {
+          "value": "1TB",
+          "price": null,
+          "stock": null
+        }
+      ],
+      "specifications": {
+        "Display": "6.3-inch Super Retina XDR OLED",
+        "Refresh Rate": "ProMotion up to 120Hz",
+        "Processor": "A18 Pro",
+        "Rear Camera": "48MP Fusion + 48MP Ultra Wide + 12MP Telephoto",
+        "Front Camera": "12MP TrueDepth",
+        "Video": "4K Dolby Vision",
+        "Connectivity": "5G, Wi-Fi 7, Bluetooth 5.3",
+        "Operating System": "iOS",
+        "Water Resistance": "IP68"
+      }
+    },
+    {
+      "id": "15",
+      "title": "iPhone 16 Pro Max",
+      "brand": "Apple",
+      "price": 144900,
+      "category": "Mobiles",
+      "description": "Apple iPhone 16 Pro Max with 256GB storage and large premium display.",
+      "stock": 6,
+      "image": "https://static01.galaxus.com/productimages/5/9/1/2/4/1/9/2/6/5/8/3/0/9/0/0/6/2/7ff4ca9c-9ea3-4318-b04a-51a391dfaedc_cropped.jpg_sea.jpeg",
+      "colors": [
+        {
+          "name": "Black Titanium",
+          "hex": "#454545",
+          "images": []
+        },
+        {
+          "name": "White Titanium",
+          "hex": "#D8D8D8",
+          "images": []
+        },
+        {
+          "name": "Natural Titanium",
+          "hex": "#A9A49B",
+          "images": []
+        },
+        {
+          "name": "Desert Titanium",
+          "hex": "#BFA58B",
+          "images": [
+            "https://static01.galaxus.com/productimages/5/9/1/2/4/1/9/2/6/5/8/3/0/9/0/0/6/2/7ff4ca9c-9ea3-4318-b04a-51a391dfaedc_cropped.jpg_sea.jpeg"
+          ]
+        }
+      ],
+      "storageOptions": [
+        {
+          "value": "256GB",
+          "price": 144900,
+          "stock": 6
+        },
+        {
+          "value": "512GB",
+          "price": null,
+          "stock": null
+        },
+        {
+          "value": "1TB",
+          "price": null,
+          "stock": null
+        }
+      ],
+      "specifications": {
+        "Display": "6.9-inch Super Retina XDR OLED",
+        "Refresh Rate": "ProMotion up to 120Hz",
+        "Processor": "A18 Pro",
+        "Rear Camera": "48MP Fusion + 48MP Ultra Wide + 12MP 5x Telephoto",
+        "Front Camera": "12MP TrueDepth",
+        "Video": "4K Dolby Vision",
+        "Connectivity": "5G, Wi-Fi 7, Bluetooth 5.3",
+        "Operating System": "iOS",
+        "Water Resistance": "IP68"
+      }
+    },
+    {
+      "id": "16",
+      "title": "iPhone 15 Plus",
+      "brand": "Apple",
+      "price": 69900,
+      "category": "Mobiles",
+      "description": "Apple iPhone 15 Plus with 128GB storage and large OLED display.",
+      "stock": 10,
+      "image": "https://bf1af2.akinoncloudcdn.com/products/2024/09/19/32504/8daa3944-5b89-4647-92dc-6e841ad165cf_size3840_cropCenter.jpg",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "#252525",
+          "images": [
+            "https://bf1af2.akinoncloudcdn.com/products/2024/09/19/32504/8daa3944-5b89-4647-92dc-6e841ad165cf_size3840_cropCenter.jpg"
+          ]
+        },
+        {
+          "name": "Blue",
+          "hex": "#A7C7E7",
+          "images": []
+        },
+        {
+          "name": "Green",
+          "hex": "#D0E5D2",
+          "images": []
+        },
+        {
+          "name": "Yellow",
+          "hex": "#F5E6A8",
+          "images": []
+        },
+        {
+          "name": "Pink",
+          "hex": "#F4C7D5",
+          "images": []
+        }
+      ],
+      "storageOptions": [
+        {
+          "value": "128GB",
+          "price": 69900,
+          "stock": 10
+        },
+        {
+          "value": "256GB",
+          "price": null,
+          "stock": null
+        },
+        {
+          "value": "512GB",
+          "price": null,
+          "stock": null
+        }
+      ],
+      "specifications": {
+        "Display": "6.7-inch Super Retina XDR OLED",
+        "Processor": "A16 Bionic",
+        "Rear Camera": "48MP Main + 12MP Ultra Wide",
+        "Front Camera": "12MP TrueDepth",
+        "Connectivity": "5G, Wi-Fi 6, Bluetooth 5.3",
+        "Operating System": "iOS",
+        "Water Resistance": "IP68"
+      }
+    },
+    {
+      "id": "17",
+      "title": "Samsung Galaxy S25",
+      "brand": "Samsung",
+      "price": 80999,
+      "category": "Mobiles",
+      "description": "Samsung flagship smartphone with powerful performance and AMOLED display.",
+      "stock": 9,
+      "image": "https://www.megavente.fr/image/cache/catalog/Samsung/SIM-Free-Samsung-Galaxy-S25-5G-256GB-AI-Mobile-Phone-Navy-1-1-800x800h.png",
+      "colors": [
+        {
+          "name": "Navy",
+          "hex": "#252D46",
+          "images": [
+            "https://www.megavente.fr/image/cache/catalog/Samsung/SIM-Free-Samsung-Galaxy-S25-5G-256GB-AI-Mobile-Phone-Navy-1-1-800x800h.png"
+          ]
+        },
+        {
+          "name": "Silver Shadow",
+          "hex": "#B8B8B8",
+          "images": [
+            "https://images.samsung.com/is/image/samsung/assets/in/2501/smartphones/galaxy-s25/specs/163x346_Silver_Shadow_P1.jpg?$LazyLoad_Home_JPG$="
+          ]
+        },
+        {
+          "name": "Icy Blue",
+          "hex": "#B5D4E8",
+          "images": [
+            "https://images.samsung.com/is/image/samsung/assets/in/2501/smartphones/galaxy-s25/specs/163x346_Icyblue_P1.jpg?$LazyLoad_Home_JPG$="
+          ]
+        },
+        {
+          "name": "Mint",
+          "hex": "#B8D8C5",
+          "images": [
+            "https://images.samsung.com/is/image/samsung/assets/in/2501/smartphones/galaxy-s25/specs/163x346_Mint_P1.jpg?$LazyLoad_Home_JPG$="
+          ]
+        }
+      ],
+      "storageOptions": [
+        {
+          "value": "128GB",
+          "price": null,
+          "stock": null
+        },
+        {
+          "value": "256GB",
+          "price": 80999,
+          "stock": 9
+        },
+        {
+          "value": "512GB",
+          "price": null,
+          "stock": null
+        }
+      ],
+      "specifications": {
+        "Display": "6.2-inch Dynamic AMOLED 2X",
+        "Resolution": "2340 x 1080",
+        "Refresh Rate": "120Hz",
+        "Processor": "Snapdragon 8 Elite for Galaxy",
+        "RAM": "12GB",
+        "Rear Camera": "50MP + 10MP Telephoto + 12MP Ultra Wide",
+        "Front Camera": "12MP",
+        "Battery": "4000mAh",
+        "Connectivity": "5G, Wi-Fi 7, Bluetooth 5.4",
+        "Operating System": "Android with One UI",
+        "Water Resistance": "IP68"
+      }
+    },
+    {
+      "id": "18",
+      "title": "Samsung Galaxy S25 Ultra",
+      "brand": "Samsung",
+      "price": 129999,
+      "category": "Mobiles",
+      "description": "Samsung premium smartphone with S Pen and advanced camera system.",
+      "stock": 5,
+      "image": "https://welectronics.com/images/stories/virtuemart/product/SamsungGalaxyS25Ultrablack538.jpg",
+      "colors": [
+        {
+          "name": "Titanium Black",
+          "hex": "#292929",
+          "images": [
+            "https://welectronics.com/images/stories/virtuemart/product/SamsungGalaxyS25Ultrablack538.jpg"
+          ]
+        },
+        {
+          "name": "Titanium Gray",
+          "hex": "#999999",
+          "images": [
+            "https://images.samsung.com/is/image/samsung/assets/in/2501/smartphones/galaxy-s25-ultra/specs/163x346_Titanium_Gray_P3.jpg?$LazyLoad_Home_JPG$="
+          ]
+        },
+        {
+          "name": "Titanium Silverblue",
+          "hex": "#9EAFBD",
+          "images": [
+            "https://images.samsung.com/is/image/samsung/assets/in/2501/smartphones/galaxy-s25-ultra/specs/163x346_Titanium_Silverblue_P3.jpg?$LazyLoad_Home_JPG$="
+          ]
+        },
+        {
+          "name": "Titanium Whitesilver",
+          "hex": "#D8D8D8",
+          "images": [
+            "https://images.samsung.com/is/image/samsung/assets/in/2501/smartphones/galaxy-s25-ultra/specs/163x346_Titanium_Whitesilver_P3.jpg?$LazyLoad_Home_JPG$="
+          ]
+        }
+      ],
+      "storageOptions": [
+        {
+          "value": "256GB",
+          "price": 129999,
+          "stock": 5
+        },
+        {
+          "value": "512GB",
+          "price": null,
+          "stock": null
+        },
+        {
+          "value": "1TB",
+          "price": null,
+          "stock": null
+        }
+      ],
+      "specifications": {
+        "Display": "6.9-inch Dynamic AMOLED 2X",
+        "Refresh Rate": "120Hz",
+        "Processor": "Snapdragon 8 Elite for Galaxy",
+        "Rear Camera": "200MP + 50MP Ultra Wide + 50MP Telephoto + 10MP Telephoto",
+        "Front Camera": "12MP",
+        "Battery": "5000mAh",
+        "Special Feature": "Built-in S Pen",
+        "Connectivity": "5G, Wi-Fi 7, Bluetooth 5.4",
+        "Operating System": "Android with One UI",
+        "Water Resistance": "IP68"
+      }
+    },
+    {
+      "id": "19",
+      "title": "Samsung Galaxy A56",
+      "brand": "Samsung",
+      "price": 38999,
+      "category": "Mobiles",
+      "description": "Samsung mid-range smartphone with Super AMOLED display.",
+      "stock": 14,
+      "image": "https://mobileplanet.ua/uploads/product/2025-3-14/samsung-galaxy-a56-5g-8-256gb-awesome-graphite-sm-3387041.webp",
+      "colors": [
+        {
+          "name": "Awesome Graphite",
+          "hex": "#454545",
+          "images": [
+            "https://mobileplanet.ua/uploads/product/2025-3-14/samsung-galaxy-a56-5g-8-256gb-awesome-graphite-sm-3387041.webp"
+          ]
+        },
+        {
+          "name": "Awesome Lightgray",
+          "hex": "#C5C5C5",
+          "images": []
+        },
+        {
+          "name": "Awesome Olive",
+          "hex": "#8B9671",
+          "images": []
+        },
+        {
+          "name": "Awesome Pink",
+          "hex": "#D9A9B9",
+          "images": []
+        }
+      ],
+      "storageOptions": [
+        {
+          "value": "128GB",
+          "price": null,
+          "stock": null
+        },
+        {
+          "value": "256GB",
+          "price": 38999,
+          "stock": 14
+        }
+      ],
+      "specifications": {
+        "Display": "6.7-inch Super AMOLED",
+        "Resolution": "2340 x 1080",
+        "Refresh Rate": "120Hz",
+        "Processor": "Exynos 1580",
+        "Rear Camera": "50MP + 12MP Ultra Wide + 5MP Macro",
+        "Front Camera": "12MP",
+        "Battery": "5000mAh",
+        "Charging": "45W",
+        "Connectivity": "5G, Wi-Fi 6, Bluetooth 5.3",
+        "Operating System": "Android with One UI",
+        "Water Resistance": "IP67"
+      }
+    },
+    {
+      "id": "20",
+      "title": "OnePlus 13",
+      "brand": "OnePlus",
+      "price": 69999,
+      "category": "Mobiles",
+      "description": "OnePlus flagship Android smartphone with powerful performance.",
+      "stock": 7,
+      "image": "https://thumb.pccomponentes.com/w-530-530/articles/1086/10866329/1178-oneplus-13-5g-16gb-512gb-682-blanco-9e9cd70d-7c69-4f5e-a805-04fff4498f41.jpg",
+      "colors": [
+        {
+          "name": "Midnight Ocean",
+          "hex": "#182B45",
+          "images": []
+        },
+        {
+          "name": "Black Eclipse",
+          "hex": "#252525",
+          "images": []
+        },
+        {
+          "name": "Arctic Dawn",
+          "hex": "#E5E5E5",
+          "images": [
+            "https://thumb.pccomponentes.com/w-530-530/articles/1086/10866329/1178-oneplus-13-5g-16gb-512gb-682-blanco-9e9cd70d-7c69-4f5e-a805-04fff4498f41.jpg"
+          ]
+        }
+      ],
+      "storageOptions": [
+        {
+          "value": "256GB",
+          "price": null,
+          "stock": null
+        },
+        {
+          "value": "512GB",
+          "price": 69999,
+          "stock": 7
+        },
+        {
+          "value": "1TB",
+          "price": null,
+          "stock": null
+        }
+      ],
+      "specifications": {
+        "Display": "6.82-inch QHD+ LTPO AMOLED",
+        "Refresh Rate": "120Hz",
+        "Processor": "Snapdragon 8 Elite",
+        "RAM": "16GB",
+        "Rear Camera": "Triple 50MP Camera System",
+        "Front Camera": "32MP",
+        "Battery": "6000mAh",
+        "Charging": "100W Wired / 50W Wireless",
+        "Connectivity": "5G, Wi-Fi 7, Bluetooth 5.4",
+        "Operating System": "OxygenOS",
+        "Water Resistance": "IP68/IP69"
+      }
+    },
+    {
+      "id": "21",
+      "title": "Google Pixel 9",
+      "brand": "Google",
+      "price": 79999,
+      "category": "Mobiles",
+      "description": "Google Pixel smartphone with advanced AI features and camera.",
+      "stock": 8,
+      "image": "https://digitalcontent.api.tesco.com/v2/media/tescomobile/2450797b-6b36-4e40-897a-eaf8e46aae10/Pixel%2B9%2BObsidian%2BHERO.jpeg?h=960&w=960",
+      "colors": [
+        {
+          "name": "Obsidian",
+          "hex": "#252525",
+          "images": [
+            "https://digitalcontent.api.tesco.com/v2/media/tescomobile/2450797b-6b36-4e40-897a-eaf8e46aae10/Pixel%2B9%2BObsidian%2BHERO.jpeg?h=960&w=960"
+          ]
+        },
+        {
+          "name": "Porcelain",
+          "hex": "#E8E3D8",
+          "images": []
+        },
+        {
+          "name": "Wintergreen",
+          "hex": "#B7CFC2",
+          "images": []
+        },
+        {
+          "name": "Peony",
+          "hex": "#E8B5BE",
+          "images": []
+        }
+      ],
+      "storageOptions": [
+        {
+          "value": "128GB",
+          "price": 79999,
+          "stock": 8
+        },
+        {
+          "value": "256GB",
+          "price": null,
+          "stock": null
+        }
+      ],
+      "specifications": {
+        "Display": "6.3-inch Actua OLED",
+        "Refresh Rate": "60–120Hz",
+        "Processor": "Google Tensor G4",
+        "RAM": "12GB",
+        "Rear Camera": "50MP Wide + 48MP Ultra Wide",
+        "Front Camera": "10.5MP",
+        "Battery": "4700mAh",
+        "Connectivity": "5G, Wi-Fi 7, Bluetooth 5.3",
+        "Operating System": "Android",
+        "Water Resistance": "IP68"
+      }
+    },
+    {
+      "id": "22",
+      "title": "Redmi Note 14 Pro",
+      "brand": "Xiaomi",
+      "price": 24999,
+      "category": "Mobiles",
+      "description": "Redmi smartphone with high-resolution camera and AMOLED display.",
+      "stock": 16,
+      "image": null,
+      "colors": [
+        {
+          "name": "Midnight Black",
+          "hex": "#252525",
+          "images": []
+        },
+        {
+          "name": "Phantom Purple",
+          "hex": "#82749B",
+          "images": []
+        },
+        {
+          "name": "Titan Black",
+          "hex": "#454545",
+          "images": []
+        }
+      ],
+      "storageOptions": [
+        {
+          "value": "128GB",
+          "price": null,
+          "stock": null
+        },
+        {
+          "value": "256GB",
+          "price": 24999,
+          "stock": 16
+        },
+        {
+          "value": "512GB",
+          "price": null,
+          "stock": null
+        }
+      ],
+      "specifications": {
+        "Display": "AMOLED Display",
+        "Camera": "High-Resolution Camera System",
+        "Battery": "Large-Capacity Battery",
+        "Operating System": "Android with HyperOS",
+        "Variant": "Confirm 4G or 5G model"
+      }
+    },
+    {
+      "id": "23",
+      "title": "MacBook Air M4",
+      "brand": "Apple",
+      "price": 99900,
+      "category": "Laptops",
+      "description": "Apple MacBook Air with M4 chip, 16GB unified memory and 256GB SSD.",
+      "stock": 7,
+      "image": null,
+      "colors": [
+        {
+          "name": "Sky Blue",
+          "hex": "#A9C5D9",
+          "images": []
+        },
+        {
+          "name": "Silver",
+          "hex": "#C0C0C0",
+          "images": []
+        },
+        {
+          "name": "Starlight",
+          "hex": "#E4DCCB",
+          "images": []
+        },
+        {
+          "name": "Midnight",
+          "hex": "#343A40",
+          "images": []
+        }
+      ],
+      "storageOptions": [
+        {
+          "value": "256GB SSD",
+          "price": 99900,
+          "stock": 7
+        },
+        {
+          "value": "512GB SSD",
+          "price": null,
+          "stock": null
+        },
+        {
+          "value": "1TB SSD",
+          "price": null,
+          "stock": null
+        }
+      ],
+      "specifications": {
+        "Display": "13.6-inch Liquid Retina",
+        "Resolution": "2560 x 1664",
+        "Processor": "Apple M4",
+        "CPU": "10-Core CPU",
+        "Memory": "16GB Unified Memory",
+        "Camera": "12MP Center Stage",
+        "Battery Life": "Up to 18 Hours",
+        "Operating System": "macOS",
+        "Ports": "MagSafe 3, Thunderbolt / USB-C"
+      }
+    },
+    {
+      "id": "24",
+      "title": "MacBook Pro M4",
+      "brand": "Apple",
+      "price": 169900,
+      "category": "Laptops",
+      "description": "Apple MacBook Pro with M4 chip, Liquid Retina XDR display and 512GB SSD.",
+      "stock": 4,
+      "image": null,
+      "colors": [
+        {
+          "name": "Space Black",
+          "hex": "#292929",
+          "images": []
+        },
+        {
+          "name": "Silver",
+          "hex": "#C0C0C0",
+          "images": []
+        }
+      ],
+      "storageOptions": [
+        {
+          "value": "512GB SSD",
+          "price": 169900,
+          "stock": 4
+        },
+        {
+          "value": "1TB SSD",
+          "price": null,
+          "stock": null
+        },
+        {
+          "value": "2TB SSD",
+          "price": null,
+          "stock": null
+        }
+      ],
+      "specifications": {
+        "Display": "14.2-inch Liquid Retina XDR",
+        "Resolution": "3024 x 1964",
+        "Refresh Rate": "ProMotion 120Hz",
+        "Processor": "Apple M4",
+        "Memory": "16GB Unified Memory",
+        "Camera": "12MP Center Stage",
+        "Battery Life": "Up to 24 Hours",
+        "Operating System": "macOS",
+        "Ports": "Thunderbolt, HDMI, SDXC, MagSafe 3"
+      }
+    },
+    {
+      "id": "25",
+      "title": "MacBook Air M3",
+      "brand": "Apple",
+      "price": 89900,
+      "category": "Laptops",
+      "description": "Apple MacBook Air with M3 chip, 8GB unified memory and 256GB SSD.",
+      "stock": 6,
+      "image": null,
+      "colors": [
+        {
+          "name": "Midnight",
+          "hex": "#343A40",
+          "images": []
+        },
+        {
+          "name": "Starlight",
+          "hex": "#E4DCCB",
+          "images": []
+        },
+        {
+          "name": "Silver",
+          "hex": "#C0C0C0",
+          "images": []
+        },
+        {
+          "name": "Space Gray",
+          "hex": "#777777",
+          "images": []
+        }
+      ],
+      "storageOptions": [
+        {
+          "value": "256GB SSD",
+          "price": 89900,
+          "stock": 6
+        },
+        {
+          "value": "512GB SSD",
+          "price": null,
+          "stock": null
+        },
+        {
+          "value": "1TB SSD",
+          "price": null,
+          "stock": null
+        }
+      ],
+      "specifications": {
+        "Display": "13.6-inch Liquid Retina",
+        "Resolution": "2560 x 1664",
+        "Processor": "Apple M3",
+        "Memory": "8GB Unified Memory",
+        "Camera": "1080p FaceTime HD",
+        "Battery Life": "Up to 18 Hours",
+        "Operating System": "macOS",
+        "Ports": "MagSafe 3, Thunderbolt / USB-C"
+      }
+    },
+    {
+      "id": "26",
+      "title": "Dell Inspiron 15",
+      "brand": "Dell",
+      "price": 54990,
+      "category": "Laptops",
+      "description": "Dell laptop with Intel Core i5 processor, 16GB RAM and 512GB SSD.",
+      "stock": 10,
+      "image": null,
+      "colors": [
+        {
+          "name": "Platinum Silver",
+          "hex": "#C0C0C0",
+          "images": []
+        },
+        {
+          "name": "Carbon Black",
+          "hex": "#292929",
+          "images": []
+        }
+      ],
+      "storageOptions": [
+        {
+          "value": "256GB SSD",
+          "price": null,
+          "stock": null
+        },
+        {
+          "value": "512GB SSD",
+          "price": 54990,
+          "stock": 10
+        },
+        {
+          "value": "1TB SSD",
+          "price": null,
+          "stock": null
+        }
+      ],
+      "specifications": {
+        "Display": "15.6-inch Full HD",
+        "Processor": "Intel Core i5",
+        "RAM": "16GB",
+        "Graphics": "Integrated Intel Graphics",
+        "Operating System": "Windows 11",
+        "Connectivity": "Wi-Fi, Bluetooth",
+        "Ports": "USB, HDMI, Audio"
+      }
+    },
+    {
+      "id": "27",
+      "title": "Dell XPS 13",
+      "brand": "Dell",
+      "price": 129990,
+      "category": "Laptops",
+      "description": "Premium Dell laptop with Intel Core Ultra processor and compact display.",
+      "stock": 5,
+      "image": null,
+      "colors": [
+        {
+          "name": "Platinum",
+          "hex": "#C0C0C0",
+          "images": []
+        },
+        {
+          "name": "Graphite",
+          "hex": "#454545",
+          "images": []
+        }
+      ],
+      "storageOptions": [
+        {
+          "value": "512GB SSD",
+          "price": null,
+          "stock": null
+        },
+        {
+          "value": "1TB SSD",
+          "price": 129990,
+          "stock": 5
+        },
+        {
+          "value": "2TB SSD",
+          "price": null,
+          "stock": null
+        }
+      ],
+      "specifications": {
+        "Display": "13.4-inch",
+        "Processor": "Intel Core Ultra",
+        "RAM": "Configuration Dependent",
+        "Graphics": "Integrated Intel Graphics",
+        "Operating System": "Windows 11",
+        "Connectivity": "Wi-Fi, Bluetooth",
+        "Design": "Premium Thin and Lightweight"
+      }
+    },
+    {
+      "id": "28",
+      "title": "HP Pavilion 15",
+      "brand": "HP",
+      "price": 62990,
+      "category": "Laptops",
+      "description": "HP laptop with Intel Core i5, 16GB RAM and 512GB SSD.",
+      "stock": 9,
+      "image": null,
+      "colors": [
+        {
+          "name": "Natural Silver",
+          "hex": "#C0C0C0",
+          "images": []
+        },
+        {
+          "name": "Warm Gold",
+          "hex": "#C8AD83",
+          "images": []
+        }
+      ],
+      "storageOptions": [
+        {
+          "value": "256GB SSD",
+          "price": null,
+          "stock": null
+        },
+        {
+          "value": "512GB SSD",
+          "price": 62990,
+          "stock": 9
+        },
+        {
+          "value": "1TB SSD",
+          "price": null,
+          "stock": null
+        }
+      ],
+      "specifications": {
+        "Display": "15.6-inch Full HD",
+        "Processor": "Intel Core i5",
+        "RAM": "16GB",
+        "Graphics": "Integrated Intel Graphics",
+        "Operating System": "Windows 11",
+        "Connectivity": "Wi-Fi, Bluetooth",
+        "Ports": "USB, HDMI, Audio"
+      }
+    },
+    {
+      "id": "29",
+      "title": "HP Victus Gaming Laptop",
+      "brand": "HP",
+      "price": 84990,
+      "category": "Laptops",
+      "description": "HP gaming laptop with dedicated graphics and high refresh rate display.",
+      "stock": 6,
+      "image": "https://brightstarcomp.com/cdn/shop/files/Web_Victus_15_PBlue_4.jpg?v=1752551328&width=1946",
+      "colors": [
+        {
+          "name": "Performance Blue",
+          "hex": "#344D70",
+          "images": [
+            "https://brightstarcomp.com/cdn/shop/files/Web_Victus_15_PBlue_4.jpg?v=1752551328&width=1946"
+          ]
+        },
+        {
+          "name": "Mica Silver",
+          "hex": "#B9B9B9",
+          "images": []
+        }
+      ],
+      "storageOptions": [
+        {
+          "value": "512GB SSD",
+          "price": 84990,
+          "stock": 6
+        },
+        {
+          "value": "1TB SSD",
+          "price": null,
+          "stock": null
+        }
+      ],
+      "specifications": {
+        "Display": "15.6-inch Full HD",
+        "Processor": "Configuration Dependent",
+        "RAM": "Configuration Dependent",
+        "Graphics": "Dedicated NVIDIA GeForce",
+        "Refresh Rate": "Configuration Dependent",
+        "Operating System": "Windows 11",
+        "Keyboard": "Gaming Keyboard",
+        "Connectivity": "Wi-Fi, Bluetooth"
+      }
+    },
+    {
+      "id": "30",
+      "title": "ASUS Vivobook 15",
+      "brand": "ASUS",
+      "price": 49990,
+      "category": "Laptops",
+      "description": "ASUS laptop with Intel Core i5, 16GB RAM and 512GB SSD.",
+      "stock": 11,
+      "image": null,
+      "colors": [
+        {
+          "name": "Cool Silver",
+          "hex": "#C0C0C0",
+          "images": []
+        },
+        {
+          "name": "Indie Black",
+          "hex": "#252525",
+          "images": []
+        }
+      ],
+      "storageOptions": [
+        {
+          "value": "256GB SSD",
+          "price": null,
+          "stock": null
+        },
+        {
+          "value": "512GB SSD",
+          "price": 49990,
+          "stock": 11
+        },
+        {
+          "value": "1TB SSD",
+          "price": null,
+          "stock": null
+        }
+      ],
+      "specifications": {
+        "Display": "15.6-inch Full HD",
+        "Processor": "Intel Core i5",
+        "RAM": "16GB",
+        "Graphics": "Integrated Intel Graphics",
+        "Operating System": "Windows 11",
+        "Connectivity": "Wi-Fi, Bluetooth",
+        "Keyboard": "Chiclet Keyboard"
+      }
+    },
+    {
+      "id": "31",
+      "title": "ASUS ROG Strix G16",
+      "brand": "ASUS",
+      "price": 149990,
+      "category": "Laptops",
+      "description": "High-performance gaming laptop with dedicated graphics.",
+      "stock": 4,
+      "image": null,
+      "colors": [
+        {
+          "name": "Eclipse Gray",
+          "hex": "#454545",
+          "images": []
+        },
+        {
+          "name": "Volt Green",
+          "hex": "#91B84A",
+          "images": []
+        }
+      ],
+      "storageOptions": [
+        {
+          "value": "512GB SSD",
+          "price": null,
+          "stock": null
+        },
+        {
+          "value": "1TB SSD",
+          "price": 149990,
+          "stock": 4
+        },
+        {
+          "value": "2TB SSD",
+          "price": null,
+          "stock": null
+        }
+      ],
+      "specifications": {
+        "Display": "16-inch Gaming Display",
+        "Processor": "Intel Core i7 / i9, Configuration Dependent",
+        "RAM": "Configuration Dependent",
+        "Graphics": "Dedicated NVIDIA GeForce RTX",
+        "Refresh Rate": "Configuration Dependent",
+        "Operating System": "Windows 11",
+        "Cooling": "Advanced Gaming Cooling",
+        "Keyboard": "RGB Backlit Keyboard"
+      }
+    },
+    {
+      "id": "32",
+      "title": "Lenovo IdeaPad Slim 5",
+      "brand": "Lenovo",
+      "price": 67990,
+      "category": "Laptops",
+      "description": "Lenovo laptop with AMD Ryzen processor, 16GB RAM and 512GB SSD.",
+      "stock": 8,
+      "image": "https://mc.bajajfinserv.in/media/catalog/product/8/3/83bf0048in_base.jpeg",
+      "colors": [
+        {
+          "name": "Cloud Grey",
+          "hex": "#B7B7B7",
+          "images": [
+            "https://mc.bajajfinserv.in/media/catalog/product/8/3/83bf0048in_base.jpeg"
+          ]
+        },
+        {
+          "name": "Abyss Blue",
+          "hex": "#263C5A",
+          "images": []
+        }
+      ],
+      "storageOptions": [
+        {
+          "value": "256GB SSD",
+          "price": null,
+          "stock": null
+        },
+        {
+          "value": "512GB SSD",
+          "price": 67990,
+          "stock": 8
+        },
+        {
+          "value": "1TB SSD",
+          "price": null,
+          "stock": null
+        }
+      ],
+      "specifications": {
+        "Display": "Configuration Dependent",
+        "Processor": "AMD Ryzen",
+        "RAM": "16GB",
+        "Graphics": "Integrated AMD Radeon",
+        "Operating System": "Windows 11",
+        "Connectivity": "Wi-Fi, Bluetooth",
+        "Design": "Slim and Lightweight"
+      }
+    }
+  ],
+  "users": [
+    {
+      "name": "admin",
+      "email": "shadil400025@gmail.com",
+      "password": "admin@123",
+      "id": "9yRveXAC0l0"
+    }
+  ],
+  "orders": [
+    {
+      "userId": "9yRveXAC0l0",
+      "items": [
+        {
+          "id": "1",
+          "title": "iPhone 15",
+          "price": 55000,
+          "category": "Mobiles",
+          "description": "Apple iPhone with 128GB storage",
+          "image": "https://placehold.co/300x300?text=iPhone",
+          "stock": 10,
+          "quantity": 1
+        }
+      ],
+      "total": 55000,
+      "date": "2026-11-24T06:04:56.550Z",
+      "status": "Placed",
+      "id": "Njb6_eIQCm8"
+    },
+    {
+      "userId": "9yRveXAC0l0",
+      "items": [
+        {
+          "id": "1",
+          "title": "iPhone 15",
+          "price": 55000,
+          "category": "Mobiles",
+          "description": "Apple iPhone with 128GB storage",
+          "image": "https://placehold.co/300x300?text=iPhone",
+          "stock": 10,
+          "quantity": 1
+        }
+      ],
+      "total": 55000,
+      "date": "2026-11-24T06:08:34.744Z",
+      "status": "Placed",
+      "id": "mfn-JyaSr-I"
+    },
+    {
+      "userId": "9yRveXAC0l0",
+      "items": [
+        {
+          "id": "1",
+          "title": "iPhone 15",
+          "price": 55000,
+          "category": "Mobiles",
+          "description": "Apple iPhone with 128GB storage",
+          "image": "https://placehold.co/300x300?text=iPhone",
+          "stock": 10,
+          "quantity": 1
+        }
+      ],
+      "total": 55000,
+      "date": "2026-11-24T06:15:02.218Z",
+      "status": "Placed",
+      "id": "Dnn0JE2g_p4"
+    },
+    {
+      "userId": "9yRveXAC0l0",
+      "items": [
+        {
+          "id": "1",
+          "title": "iPhone 15",
+          "price": 55000,
+          "category": "Mobiles",
+          "description": "Apple iPhone with 128GB storage",
+          "image": "https://placehold.co/300x300?text=iPhone",
+          "stock": 10,
+          "quantity": 1
+        }
+      ],
+      "total": 55000,
+      "date": "2026-11-24T07:24:29.953Z",
+      "status": "Placed",
+      "id": "tUmffFcT3Z4"
+    },
+    {
+      "userId": "9yRveXAC0l0",
+      "items": [
+        {
+          "id": "1",
+          "title": "iPhone 15",
+          "price": 55000,
+          "category": "Mobiles",
+          "description": "Apple iPhone with 128GB storage",
+          "image": "https://placehold.co/300x300?text=iPhone",
+          "stock": 10,
+          "quantity": 2
+        },
+        {
+          "id": "2",
+          "title": "Samsung Galaxy S24",
+          "price": 65000,
+          "category": "Mobiles",
+          "description": "Samsung smartphone",
+          "image": "https://placehold.co/300x300?text=Samsung",
+          "stock": 8,
+          "quantity": 1
+        }
+      ],
+      "total": 175000,
+      "date": "2026-11-24T10:04:31.900Z",
+      "status": "Placed",
+      "id": "Bp4FZWDmr0A"
+    },
+    {
+      "userId": "9yRveXAC0l0",
+      "items": [
+        {
+          "id": "1",
+          "title": "iPhone 15",
+          "price": 55000,
+          "category": "Mobiles",
+          "description": "Apple iPhone with 128GB storage",
+          "image": "https://placehold.co/300x300?text=iPhone",
+          "stock": 10,
+          "quantity": 1
+        }
+      ],
+      "total": 55000,
+      "date": "2026-11-24T10:09:48.758Z",
+      "status": "Placed",
+      "id": "ZEwSpGdK3GE"
+    },
+    {
+      "userId": "9yRveXAC0l0",
+      "items": [
+        {
+          "id": "1",
+          "title": "iPhone 15",
+          "brand": "Apple",
+          "model": "iPhone 15 128GB",
+          "price": 55000,
+          "category": "Mobiles",
+          "description": "Apple iPhone 15 with A16 Bionic chip and advanced dual camera.",
+          "image": "YOUR_MAIN_IMAGE_URL",
+          "images": [
+            "YOUR_FRONT_IMAGE_URL",
+            "YOUR_BACK_IMAGE_URL",
+            "YOUR_SIDE_IMAGE_URL",
+            "YOUR_CAMERA_IMAGE_URL"
+          ],
+          "colors": [
+            "Black",
+            "Blue",
+            "Green",
+            "Yellow",
+            "Pink"
+          ],
+          "specifications": {
+            "Display": "6.1-inch Super Retina XDR OLED",
+            "Processor": "A16 Bionic",
+            "Storage": "128GB",
+            "RAM": "6GB",
+            "Rear Camera": "48MP + 12MP",
+            "Front Camera": "12MP",
+            "Connectivity": "5G",
+            "Operating System": "iOS"
+          },
+          "stock": 10,
+          "selectedColor": "Black",
+          "quantity": 5
+        },
+        {
+          "id": "1",
+          "title": "iPhone 15",
+          "price": 55000,
+          "category": "Mobiles",
+          "description": "Apple iPhone 15 with 128GB storage.",
+          "stock": 20,
+          "image": "https://example.com/iphone-blue.jpg",
+          "colors": [
+            {
+              "name": "Black",
+              "hex": "#252525",
+              "image": "https://example.com/iphone-black.jpg"
+            },
+            {
+              "name": "Blue",
+              "hex": "#A7C7E7",
+              "image": "https://example.com/iphone-blue.jpg"
+            },
+            {
+              "name": "Pink",
+              "hex": "#F4C7D5",
+              "image": "https://example.com/iphone-pink.jpg"
+            }
+          ],
+          "specifications": {
+            "Brand": "Apple",
+            "Model": "iPhone 15",
+            "Storage": "128GB",
+            "Display": "6.1-inch Super Retina XDR",
+            "Camera": "48MP Main Camera",
+            "Processor": "A16 Bionic",
+            "Battery": "Built-in rechargeable battery",
+            "Operating System": "iOS"
+          },
+          "selectedColor": "Blue",
+          "quantity": 1
+        },
+        {
+          "id": "1",
+          "title": "iPhone 15",
+          "price": 55000,
+          "category": "Mobiles",
+          "description": "Apple iPhone 15 with 128GB storage.",
+          "stock": 20,
+          "image": "https://example.com/iphone-black.jpg",
+          "colors": [
+            {
+              "name": "Black",
+              "hex": "#252525",
+              "image": "https://example.com/iphone-black.jpg"
+            },
+            {
+              "name": "Blue",
+              "hex": "#A7C7E7",
+              "image": "https://example.com/iphone-blue.jpg"
+            },
+            {
+              "name": "Pink",
+              "hex": "#F4C7D5",
+              "image": "https://example.com/iphone-pink.jpg"
+            }
+          ],
+          "specifications": {
+            "Brand": "Apple",
+            "Model": "iPhone 15",
+            "Storage": "128GB",
+            "Display": "6.1-inch Super Retina XDR",
+            "Camera": "48MP Main Camera",
+            "Processor": "A16 Bionic",
+            "Battery": "Built-in rechargeable battery",
+            "Operating System": "iOS"
+          },
+          "selectedColor": "",
+          "quantity": 1
+        }
+      ],
+      "total": 385000,
+      "date": "2026-11-25T05:39:42.102Z",
+      "status": "Placed",
+      "id": "Diuy8_qhb1Y"
+    },
+    {
+      "userId": "9yRveXAC0l0",
+      "items": [
+        {
+          "id": "1",
+          "title": "iPhone 15",
+          "price": 55000,
+          "category": "Mobiles",
+          "description": "Apple iPhone 15 with 128GB storage.",
+          "stock": 20,
+          "image": "https://example.com/iphone-blue.jpg",
+          "colors": [
+            {
+              "name": "Black",
+              "hex": "#252525",
+              "image": "https://example.com/iphone-black.jpg"
+            },
+            {
+              "name": "Blue",
+              "hex": "#A7C7E7",
+              "image": "https://example.com/iphone-blue.jpg"
+            },
+            {
+              "name": "Pink",
+              "hex": "#F4C7D5",
+              "image": "https://example.com/iphone-pink.jpg"
+            }
+          ],
+          "specifications": {
+            "Brand": "Apple",
+            "Model": "iPhone 15",
+            "Storage": "128GB",
+            "Display": "6.1-inch Super Retina XDR",
+            "Camera": "48MP Main Camera",
+            "Processor": "A16 Bionic",
+            "Battery": "Built-in rechargeable battery",
+            "Operating System": "iOS"
+          },
+          "selectedColor": "Blue",
+          "quantity": 2
+        }
+      ],
+      "total": 110000,
+      "date": "2026-11-25T05:45:16.127Z",
+      "status": "Placed",
+      "id": "oW5Np6mx69M"
+    }
+  ],
+  "colors": [
+    {
+      "name": "Black",
+      "hex": "#222222",
+      "id": "nVv2H2x7bY0"
+    },
+    {
+      "name": "Silver",
+      "hex": "#C0C0C0",
+      "id": "LS-1M79ncwA"
+    },
+    {
+      "name": "Purple",
+      "hex": "#B6A1D0",
+      "id": "zxgoz4lqBsc"
+    }
+  ],
+  "carts": [
+    {
+      "userId": "9yRveXAC0l0",
+      "items": [],
+      "id": "nhOKGs2ua0s"
+    }
+  ],
+  "wishlists": [],
+  "$schema": "./node_modules/json-server/schema.json"
+}
