@@ -13,21 +13,19 @@
     min-height: 620px;
 }
 
-/* Slightly compact welcome section */
+/* Welcome section */
 
 .register-card .login-welcome {
     padding-top: 45px;
     padding-bottom: 45px;
 }
 
-/* Register form section */
+/* Register form */
 
 .register-form-section {
     padding-top: 40px;
     padding-bottom: 40px;
 }
-
-/* Heading */
 
 .register-form-section .login-heading {
     margin-bottom: 25px;
@@ -37,10 +35,96 @@
     font-size: 34px;
 }
 
-/* Input spacing */
-
 .register-form-section .login-input-group {
     margin-bottom: 19px;
+}
+
+/* ===================================
+   PASSWORD INPUT
+   Uses shared Login.css styling
+=================================== */
+
+.register-form-section .login-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.register-form-section .login-input-wrapper input {
+    flex: 1;
+    min-width: 0;
+    width: 100%;
+    padding-right: 10px;
+}
+
+/* Input icon */
+
+.register-form-section .input-icon {
+    flex-shrink: 0;
+    pointer-events: none;
+}
+
+/* Password toggle */
+
+.register-form-section .login-input-wrapper .password-toggle {
+    position: relative;
+    flex: 0 0 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    margin: 0;
+    padding: 0 5px;
+
+    color: #174D38 !important;
+    -webkit-text-fill-color: #174D38;
+
+    background: transparent !important;
+    border: none !important;
+    outline: none;
+    box-shadow: none !important;
+
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 0.8px;
+
+    cursor: pointer;
+    z-index: 5;
+
+    transition:
+        color 0.3s ease,
+        transform 0.25s ease;
+}
+
+.register-form-section .password-toggle:hover {
+    color: #4D1717 !important;
+    -webkit-text-fill-color: #4D1717;
+    transform: scale(1.08);
+}
+
+.register-form-section .password-toggle:active {
+    transform: scale(0.92);
+}
+
+/* Smooth text transition */
+
+.register-form-section .password-toggle span {
+    display: inline-block;
+    animation: passwordTextEnter 0.25s ease;
+}
+
+@keyframes passwordTextEnter {
+    from {
+        opacity: 0;
+        transform: translateY(4px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Register button */
@@ -49,7 +133,9 @@
     margin-top: 24px;
 }
 
-/* Mobile */
+/* ===================================
+   MOBILE
+=================================== */
 
 @media (max-width: 650px) {
     .register-page {
@@ -67,4 +153,129 @@
     .register-form-section .login-heading h2 {
         font-size: 30px;
     }
+}
+
+/* ===================================
+   PASSWORD TOGGLE - FINAL OVERRIDE
+=================================== */
+
+.register-form-section .password-wrapper {
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+}
+
+.register-form-section .password-wrapper input {
+    flex: 1;
+    min-width: 0;
+    width: 0;
+    padding-right: 5px !important;
+    position: relative;
+    z-index: 1;
+}
+
+.register-form-section .password-wrapper .input-icon {
+    position: relative;
+    z-index: 1;
+    flex-shrink: 0;
+    pointer-events: none;
+}
+
+.register-form-section .password-wrapper .password-toggle {
+    position: relative;
+    z-index: 5;
+
+    flex: 0 0 65px;
+    width: 65px;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+
+    border: none !important;
+    background: transparent !important;
+
+    color: #174D38 !important;
+    -webkit-text-fill-color: #174D38;
+
+    cursor: pointer;
+    pointer-events: auto;
+
+    transition: color 0.3s ease, transform 0.25s ease;
+}
+
+.register-form-section .password-wrapper .password-toggle:hover {
+    color: #4D1717 !important;
+    -webkit-text-fill-color: #4D1717;
+    transform: scale(1.08);
+}
+/* Independent password field */
+
+.password-field {
+    width: 100%;
+    height: 53px;
+    display: flex;
+    align-items: center;
+
+    background: #F2F2F2;
+    border: 1px solid transparent;
+    border-radius: 9px;
+
+    transition: border-color 0.3s ease,
+                background 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.password-field:focus-within {
+    background: #fff;
+    border-color: #174D38;
+    box-shadow: 0 0 0 4px rgba(23, 77, 56, 0.09);
+}
+
+.password-field input {
+    flex: 1;
+    min-width: 0;
+    height: 100%;
+    padding: 0 14px;
+
+    border: none;
+    outline: none;
+    background: transparent;
+
+    color: #333;
+    font-size: 13px;
+}
+
+.password-field .password-toggle {
+    flex-shrink: 0;
+    height: 100%;
+    min-width: 65px;
+
+    margin: 0;
+    padding: 0 10px;
+
+    border: none;
+    background: transparent;
+
+    color: #174D38;
+    font-size: 10px;
+    font-weight: 900;
+    cursor: pointer;
+
+    transition: color 0.3s ease,
+                transform 0.25s ease;
+}
+
+.password-field .password-toggle:hover {
+    color: #4D1717;
+}
+
+.password-field .password-toggle:active {
+    transform: scale(0.94);
 }

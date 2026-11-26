@@ -40,10 +40,11 @@ function Navbar() {
 
             <div className="navbar-links">
 
-                <Link to="/" className="nav-link">
+                <Link to="" className="nav-link">
                     Discover
                 </Link>
 
+                <Link to="/products" className="nav-link">Products</Link>
                 {user && (
                     <>
                         <Link to="/cart" className="nav-link">

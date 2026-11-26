@@ -19,8 +19,9 @@ function Footer() {
 
                 <div className="footer-links">
                     <h3>Explore</h3>
-                    <Link to="/">Home</Link>
-                    <a href="/#products">Products</a>
+                    <Link to="">Home</Link>
+                    <Link to="/products">Products</Link>
+
                     <Link to="/wishlist">Wishlist</Link>
                 </div>
 

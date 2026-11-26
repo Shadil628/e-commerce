@@ -14,6 +14,7 @@ import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
+import Products from "./pages/Products"
 
 function App() {
 
@@ -34,7 +35,7 @@ function App() {
       <Routes>
 
         <Route path="/" element={<Home />} />
-
+        <Route path="/products" element={<Products/>} />
         <Route
           path="/products/:id"
           element={<ProductDetails />}

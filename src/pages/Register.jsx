@@ -25,17 +25,28 @@ function Register() {
         password: ""
     });
 
+    // Handle input changes
     const handleChange = (e) => {
-        setForm({
-            ...form,
-            [e.target.name]: e.target.value
-        });
+        const { name, value } = e.target;
+
+        setForm((prev) => ({
+            ...prev,
+            [name]: value
+        }));
 
         setValidationError("");
     };
 
+    // Toggle password visibility
+    const togglePassword = () => {
+        setShowPassword((prev) => !prev);
+    };
+
+    // Handle registration
     const handleSubmit = async (e) => {
         e.preventDefault();
+
+        setValidationError("");
 
         if (
             !form.name.trim() ||
@@ -53,14 +64,35 @@ function Register() {
             return;
         }
 
-        const result = await dispatch(registerUser(form));
+        try {
+            const result = await dispatch(registerUser(form));
 
-        if (registerUser.fulfilled.match(result)) {
-            navigate("/login", {
-                state: {
-                    message: "Registration successful! Please sign in."
-                }
-            });
+            if (registerUser.fulfilled.match(result)) {
+
+                // Clear all registration inputs
+                setForm({
+                    name: "",
+                    email: "",
+                    password: ""
+                });
+
+                // Reset password visibility
+                setShowPassword(false);
+
+                // Clear validation error
+                setValidationError("");
+
+                // Navigate to Login
+                navigate("/login", {
+                    state: {
+                        message: "Registration successful! Please sign in."
+                    },
+                    replace: true
+                });
+            }
+
+        } catch (err) {
+            console.error("Registration failed:", err);
         }
     };
 
@@ -216,39 +248,15 @@ function Register() {
                             {/* PASSWORD */}
 
                             <div className="login-input-group">
-
                                 <label htmlFor="register-password">
                                     Password
                                 </label>
 
-                                <div className="login-input-wrapper">
-
-                                    <span className="input-icon">
-                                        <svg
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            strokeWidth="1.8"
-                                        >
-                                            <rect
-                                                x="4"
-                                                y="10"
-                                                width="16"
-                                                height="11"
-                                                rx="2"
-                                            />
-                                            <path d="M8 10V7a4 4 0 0 1 8 0v3" />
-                                            <path d="M12 14v3" />
-                                        </svg>
-                                    </span>
+                                <div className="password-field">
 
                                     <input
                                         id="register-password"
-                                        type={
-                                            showPassword
-                                                ? "text"
-                                                : "password"
-                                        }
+                                        type={showPassword ? "text" : "password"}
                                         name="password"
                                         value={form.password}
                                         onChange={handleChange}
@@ -259,18 +267,14 @@ function Register() {
 
                                     <button
                                         type="button"
+                                        onClick={() => setShowPassword(value => !value)}
                                         className="password-toggle"
-                                        onClick={() =>
-                                            setShowPassword(!showPassword)
-                                        }
                                     >
                                         {showPassword ? "HIDE" : "SHOW"}
                                     </button>
 
                                 </div>
-
                             </div>
-
 
                             {/* ERROR MESSAGE */}
 
