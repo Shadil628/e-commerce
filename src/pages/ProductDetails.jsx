@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useCallback } from "react";
-import { useParams, Link, useNavigate } from "react-router-dom";
+import { useParams, Link, useNavigate, useLocation } from "react-router-dom";
+import { useSelector } from "react-redux";
 import { useQuery } from "@tanstack/react-query";
 import useCart from "../hooks/useCart";
 import { getProductById } from "../services/productService";
@@ -7,6 +8,8 @@ import SuccessPopup from "../components/SuccessPopup";
 
 function ProductDetails() {
     const navigate = useNavigate();
+    const location = useLocation();
+    const user = useSelector((state) => state.auth.user);
     const { id } = useParams();
 
     const { addProduct, isSaving } = useCart();
@@ -115,16 +118,24 @@ function ProductDetails() {
     };
     // Buy now
     const handleBuyNow = async () => {
-        const success = await addProduct({
-            ...product,
-            selectedColor: selectedColorOption?.name || "",
-            image: images[activeImage] || product.image
-        });
+        if (!user?.id) {
+            navigate("/login", {
+                state: {
+                    from: location.pathname,
+                    message: "Please login before buying."
+                }
+            });
+            return;
+        }
 
-        if (success) {
-            navigate("/checkout");
-        } else {
-            alert("Unable to add product. Stock limit reached.");
+        try {
+            const result = await addProduct(product);
+
+            if (result !== false) {
+                navigate("/checkout");
+            }
+        } catch (error) {
+            console.error("Buy Now error:", error);
         }
     };
 

@@ -1,5 +1,5 @@
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { logout } from "../redux/slices/authSlice";
@@ -17,9 +17,22 @@ function Navbar() {
         (total, item) => total + item.quantity,
         0
     );
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 100);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
 
     return (
-        <nav className="main-navbar">
+        <nav className={`main-navbar ${isScrolled ? "navbar-scrolled" : ""}`}>
 
             <Link to="/" className="navbar-logo">
                 MY<span>STORE.</span>

@@ -1,99 +1,280 @@
 
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Link, useNavigate } from "react-router-dom";
+import {
+    Link,
+    useNavigate,
+    useLocation
+} from "react-router-dom";
 
 import { loginUser } from "../redux/slices/authSlice";
+import "./css/Login.css";
 
 function Login() {
-  const dispatch = useDispatch();
-  const navigate = useNavigate();
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
+    const location = useLocation();
 
-  const { loading, error } = useSelector(
-    (state) => state.auth
-  );
+    const { loading, error } = useSelector(
+        (state) => state.auth
+    );
 
-  const [form, setForm] = useState({
-    email: "",
-    password: ""
-  });
+    const [showPassword, setShowPassword] = useState(false);
 
-  const handleChange = (e) => {
-    setForm({
-      ...form,
-      [e.target.name]: e.target.value
+    const [form, setForm] = useState({
+        email: "",
+        password: ""
     });
-  };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+    const handleChange = (e) => {
+        setForm({
+            ...form,
+            [e.target.name]: e.target.value
+        });
+    };
 
-    const result = await dispatch(loginUser(form));
+    const handleSubmit = async (e) => {
+        e.preventDefault();
 
-    if (loginUser.fulfilled.match(result)) {
-      alert("Login successful!");
-      navigate("/");
-    }
-  };
+        const result = await dispatch(loginUser(form));
 
-  return (
-    <div className="min-h-screen bg-[#F2F2F2] flex items-center justify-center p-5">
+        if (loginUser.fulfilled.match(result)) {
+            const redirectTo = location.state?.from || "/";
+            navigate(redirectTo, { replace: true });
+        }
+    };
 
-      <form
-        onSubmit={handleSubmit}
-        className="bg-white w-full max-w-md p-8 rounded-xl shadow-lg"
-      >
+    return (
+        <div className="login-page">
 
-        <h1 className="text-3xl font-bold text-[#174D38] text-center mb-6">
-          Welcome Back
-        </h1>
+            <div className="login-card">
 
-        <label className="block mb-2">Email</label>
+                {/* LEFT WELCOME SECTION */}
 
-        <input
-          type="email"
-          name="email"
-          value={form.email}
-          onChange={handleChange}
-          placeholder="Enter your email"
-          required
-          className="w-full border border-[#CBCBCB] p-3 rounded-lg mb-4"
-        />
+                <section className="login-welcome">
 
-        <label className="block mb-2">Password</label>
+                    <div className="login-brand">
+                        <Link to="/">
+                            MY<span>STORE.</span>
+                        </Link>
+                    </div>
 
-        <input
-          type="password"
-          name="password"
-          value={form.password}
-          onChange={handleChange}
-          placeholder="Enter your password"
-          required
-          className="w-full border border-[#CBCBCB] p-3 rounded-lg mb-5"
-        />
+                    <div className="welcome-content">
 
-        {error && (
-          <p className="text-red-600 mb-4">{error}</p>
-        )}
+                        <p className="welcome-label">
+                            WELCOME
+                        </p>
 
-        <button
-          type="submit"
-          disabled={loading}
-          className="w-full bg-[#174D38] text-white py-3 rounded-lg hover:bg-[#103b2b] disabled:opacity-50"
-        >
-          {loading ? "Logging in..." : "Login"}
-        </button>
+                        <h1>
+                            YOUR SHOPPING
+                            <br />
+                            STARTS HERE.
+                        </h1>
 
-        <p className="text-center mt-5">
-          Don't have an account?{" "}
-          <Link to="/register" className="text-[#174D38] font-bold">
-            Register
-          </Link>
-        </p>
+                        <p className="welcome-description">
+                            Discover products you love and enjoy
+                            a simple, smooth and comfortable
+                            shopping experience with MY STORE.
+                        </p>
 
-      </form>
-    </div>
-  );
+                    </div>
+
+                    <div className="welcome-footer">
+                        YOUR STYLE. YOUR STORE.
+                    </div>
+
+                    {/* DECORATIVE CIRCLES */}
+
+                    <div className="circle circle-one"></div>
+                    <div className="circle circle-two"></div>
+                    <div className="circle circle-three"></div>
+
+                </section>
+
+
+                {/* RIGHT LOGIN SECTION */}
+
+                <section className="login-form-section">
+
+                    <div className="login-form-container">
+
+                        <div className="login-heading">
+
+                            <h2>Sign In</h2>
+
+                            <p>
+                                Welcome back! Please enter your details.
+                            </p>
+
+                        </div>
+
+
+                        {/* REDIRECT MESSAGE */}
+
+                        {location.state?.message && (
+                            <div className="login-notice">
+                                {location.state.message}
+                            </div>
+                        )}
+
+
+                        <form onSubmit={handleSubmit}>
+
+                            {/* EMAIL */}
+
+                            <div className="login-input-group">
+
+                                <label htmlFor="email">
+                                    Email Address
+                                </label>
+
+                                <div className="login-input-wrapper">
+
+                                    <span className="input-icon">
+                                        <svg
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            strokeWidth="1.8"
+                                        >
+                                            <rect
+                                                x="3"
+                                                y="5"
+                                                width="18"
+                                                height="14"
+                                                rx="2"
+                                            />
+                                            <path d="m3 7 9 6 9-6" />
+                                        </svg>
+                                    </span>
+
+                                    <input
+                                        id="email"
+                                        type="email"
+                                        name="email"
+                                        value={form.email}
+                                        onChange={handleChange}
+                                        placeholder="Enter your email"
+                                        autoComplete="email"
+                                        required
+                                    />
+
+                                </div>
+
+                            </div>
+
+
+                            {/* PASSWORD */}
+
+                            <div className="login-input-group">
+
+                                <label htmlFor="password">
+                                    Password
+                                </label>
+
+                                <div className="login-input-wrapper">
+
+                                    <span className="input-icon">
+                                        <svg
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            strokeWidth="1.8"
+                                        >
+                                            <rect
+                                                x="4"
+                                                y="10"
+                                                width="16"
+                                                height="11"
+                                                rx="2"
+                                            />
+                                            <path d="M8 10V7a4 4 0 0 1 8 0v3" />
+                                            <path d="M12 14v3" />
+                                        </svg>
+                                    </span>
+
+                                    <input
+                                        id="password"
+                                        type={showPassword ? "text" : "password"}
+                                        name="password"
+                                        value={form.password}
+                                        onChange={handleChange}
+                                        placeholder="Enter your password"
+                                        autoComplete="current-password"
+                                        required
+                                    />
+
+                                    <button
+                                        type="button"
+                                        className="password-toggle"
+                                        onClick={() =>
+                                            setShowPassword(!showPassword)
+                                        }
+                                    >
+                                        {showPassword ? "HIDE" : "SHOW"}
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+
+                            {/* ERROR MESSAGE */}
+
+                            {error && (
+                                <div className="login-error">
+                                    {error}
+                                </div>
+                            )}
+
+
+                            {/* LOGIN BUTTON */}
+
+                            <button
+                                type="submit"
+                                className="login-submit-button"
+                                disabled={loading}
+                            >
+                                {loading ? (
+                                    <>
+                                        <span className="login-spinner"></span>
+                                        Signing in...
+                                    </>
+                                ) : (
+                                    "SIGN IN"
+                                )}
+                            </button>
+
+                        </form>
+
+
+                        {/* REGISTER */}
+
+                        <div className="login-register">
+
+                            <p>
+                                Don't have an account?
+
+                                <Link to="/register">
+                                    Create Account
+                                </Link>
+                            </p>
+
+                        </div>
+
+
+                        <Link to="/" className="login-back-home">
+                            ← Back to Home
+                        </Link>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </div>
+    );
 }
 
 export default Login;

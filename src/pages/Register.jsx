@@ -5,107 +5,334 @@ import { Link, useNavigate } from "react-router-dom";
 
 import { registerUser } from "../redux/slices/authSlice";
 
+import "./css/Login.css";
+import "./css/Register.css";
+
 function Register() {
-  const dispatch = useDispatch();
-  const navigate = useNavigate();
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
 
-  const { loading, error } = useSelector(
-    (state) => state.auth
-  );
+    const { loading, error } = useSelector(
+        (state) => state.auth
+    );
 
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    password: ""
-  });
+    const [showPassword, setShowPassword] = useState(false);
+    const [validationError, setValidationError] = useState("");
 
-  const handleChange = (e) => {
-    setForm({
-      ...form,
-      [e.target.name]: e.target.value
+    const [form, setForm] = useState({
+        name: "",
+        email: "",
+        password: ""
     });
-  };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+    const handleChange = (e) => {
+        setForm({
+            ...form,
+            [e.target.name]: e.target.value
+        });
 
-    if (!form.name || !form.email || !form.password) {
-      alert("Please fill all fields");
-      return;
-    }
+        setValidationError("");
+    };
 
-    const result = await dispatch(registerUser(form));
+    const handleSubmit = async (e) => {
+        e.preventDefault();
 
-    if (registerUser.fulfilled.match(result)) {
-      alert("Registration successful!");
-      navigate("/");
-    }
-  };
+        if (
+            !form.name.trim() ||
+            !form.email.trim() ||
+            !form.password.trim()
+        ) {
+            setValidationError("Please fill in all fields.");
+            return;
+        }
 
-  return (
-    <div className="min-h-screen bg-[#F2F2F2] flex items-center justify-center p-5">
+        if (form.password.length < 6) {
+            setValidationError(
+                "Password must contain at least 6 characters."
+            );
+            return;
+        }
 
-      <form
-        onSubmit={handleSubmit}
-        className="bg-white w-full max-w-md p-8 rounded-xl shadow-lg"
-      >
+        const result = await dispatch(registerUser(form));
 
-        <h1 className="text-3xl font-bold text-[#174D38] text-center mb-6">
-          Create Account
-        </h1>
+        if (registerUser.fulfilled.match(result)) {
+            navigate("/login", {
+                state: {
+                    message: "Registration successful! Please sign in."
+                }
+            });
+        }
+    };
 
-        <label className="block mb-2">Full Name</label>
-        <input
-          type="text"
-          name="name"
-          value={form.name}
-          onChange={handleChange}
-          placeholder="Enter your name"
-          className="w-full border border-[#CBCBCB] p-3 rounded-lg mb-4"
-        />
+    return (
+        <div className="login-page register-page">
 
-        <label className="block mb-2">Email</label>
-        <input
-          type="email"
-          name="email"
-          value={form.email}
-          onChange={handleChange}
-          placeholder="Enter your email"
-          className="w-full border border-[#CBCBCB] p-3 rounded-lg mb-4"
-        />
+            <div className="login-card register-card">
 
-        <label className="block mb-2">Password</label>
-        <input
-          type="password"
-          name="password"
-          value={form.password}
-          onChange={handleChange}
-          placeholder="Enter your password"
-          className="w-full border border-[#CBCBCB] p-3 rounded-lg mb-5"
-        />
+                {/* LEFT WELCOME SECTION */}
 
-        {error && (
-          <p className="text-red-600 mb-4">{error}</p>
-        )}
+                <section className="login-welcome">
 
-        <button
-          type="submit"
-          disabled={loading}
-          className="w-full bg-[#174D38] text-white py-3 rounded-lg hover:bg-[#103b2b] disabled:opacity-50"
-        >
-          {loading ? "Creating Account..." : "Register"}
-        </button>
+                    <div className="login-brand">
+                        <Link to="/">
+                            MY<span>STORE.</span>
+                        </Link>
+                    </div>
 
-        <p className="text-center mt-5">
-          Already have an account?{" "}
-          <Link to="/login" className="text-[#174D38] font-bold">
-            Login
-          </Link>
-        </p>
+                    <div className="welcome-content">
 
-      </form>
-    </div>
-  );
+                        <p className="welcome-label">
+                            JOIN US
+                        </p>
+
+                        <h1>
+                            CREATE YOUR
+                            <br />
+                            OWN ACCOUNT.
+                        </h1>
+
+                        <p className="welcome-description">
+                            Become a part of MY STORE and discover
+                            a better shopping experience. Create
+                            your account and start exploring today.
+                        </p>
+
+                    </div>
+
+                    <div className="welcome-footer">
+                        YOUR STYLE. YOUR STORE.
+                    </div>
+
+                    {/* DECORATIVE CIRCLES */}
+
+                    <div className="circle circle-one"></div>
+                    <div className="circle circle-two"></div>
+                    <div className="circle circle-three"></div>
+
+                </section>
+
+
+                {/* RIGHT REGISTER SECTION */}
+
+                <section className="login-form-section register-form-section">
+
+                    <div className="login-form-container">
+
+                        <div className="login-heading">
+
+                            <h2>Create Account</h2>
+
+                            <p>
+                                Enter your details to get started.
+                            </p>
+
+                        </div>
+
+
+                        <form onSubmit={handleSubmit}>
+
+                            {/* FULL NAME */}
+
+                            <div className="login-input-group">
+
+                                <label htmlFor="register-name">
+                                    Full Name
+                                </label>
+
+                                <div className="login-input-wrapper">
+
+                                    <span className="input-icon">
+                                        <svg
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            strokeWidth="1.8"
+                                        >
+                                            <circle cx="12" cy="8" r="4" />
+                                            <path d="M4 21a8 8 0 0 1 16 0" />
+                                        </svg>
+                                    </span>
+
+                                    <input
+                                        id="register-name"
+                                        type="text"
+                                        name="name"
+                                        value={form.name}
+                                        onChange={handleChange}
+                                        placeholder="Enter your full name"
+                                        autoComplete="name"
+                                        required
+                                    />
+
+                                </div>
+
+                            </div>
+
+
+                            {/* EMAIL */}
+
+                            <div className="login-input-group">
+
+                                <label htmlFor="register-email">
+                                    Email Address
+                                </label>
+
+                                <div className="login-input-wrapper">
+
+                                    <span className="input-icon">
+                                        <svg
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            strokeWidth="1.8"
+                                        >
+                                            <rect
+                                                x="3"
+                                                y="5"
+                                                width="18"
+                                                height="14"
+                                                rx="2"
+                                            />
+                                            <path d="m3 7 9 6 9-6" />
+                                        </svg>
+                                    </span>
+
+                                    <input
+                                        id="register-email"
+                                        type="email"
+                                        name="email"
+                                        value={form.email}
+                                        onChange={handleChange}
+                                        placeholder="Enter your email"
+                                        autoComplete="email"
+                                        required
+                                    />
+
+                                </div>
+
+                            </div>
+
+
+                            {/* PASSWORD */}
+
+                            <div className="login-input-group">
+
+                                <label htmlFor="register-password">
+                                    Password
+                                </label>
+
+                                <div className="login-input-wrapper">
+
+                                    <span className="input-icon">
+                                        <svg
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            strokeWidth="1.8"
+                                        >
+                                            <rect
+                                                x="4"
+                                                y="10"
+                                                width="16"
+                                                height="11"
+                                                rx="2"
+                                            />
+                                            <path d="M8 10V7a4 4 0 0 1 8 0v3" />
+                                            <path d="M12 14v3" />
+                                        </svg>
+                                    </span>
+
+                                    <input
+                                        id="register-password"
+                                        type={
+                                            showPassword
+                                                ? "text"
+                                                : "password"
+                                        }
+                                        name="password"
+                                        value={form.password}
+                                        onChange={handleChange}
+                                        placeholder="Create a password"
+                                        autoComplete="new-password"
+                                        required
+                                    />
+
+                                    <button
+                                        type="button"
+                                        className="password-toggle"
+                                        onClick={() =>
+                                            setShowPassword(!showPassword)
+                                        }
+                                    >
+                                        {showPassword ? "HIDE" : "SHOW"}
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+
+                            {/* ERROR MESSAGE */}
+
+                            {(validationError || error) && (
+                                <div className="login-error">
+                                    {validationError || error}
+                                </div>
+                            )}
+
+
+                            {/* REGISTER BUTTON */}
+
+                            <button
+                                type="submit"
+                                className="login-submit-button register-submit-button"
+                                disabled={loading}
+                            >
+                                {loading ? (
+                                    <>
+                                        <span className="login-spinner"></span>
+                                        Creating Account...
+                                    </>
+                                ) : (
+                                    "CREATE ACCOUNT"
+                                )}
+                            </button>
+
+                        </form>
+
+
+                        {/* LOGIN LINK */}
+
+                        <div className="login-register">
+
+                            <p>
+                                Already have an account?
+
+                                <Link to="/login">
+                                    Sign In
+                                </Link>
+                            </p>
+
+                        </div>
+
+
+                        {/* HOME LINK */}
+
+                        <Link
+                            to="/"
+                            className="login-back-home"
+                        >
+                            ← Back to Home
+                        </Link>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </div>
+    );
 }
 
 export default Register;

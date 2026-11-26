@@ -1,15 +1,21 @@
 
 import React, { useState, useCallback } from "react";
-import { Link } from "react-router-dom";
-import { useDispatch } from "react-redux";
+import { Link, useNavigate, useLocation } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
 import useCart from "../hooks/useCart";
 import { addToWishlist } from "../redux/slices/wishlistSlice";
 import SuccessPopup from "./SuccessPopup";
 
 function ProductCard({ product }) {
     const [heartKey, setHeartKey] = useState(0);
+
     const { addProduct, isLoading, isSaving } = useCart();
+
     const dispatch = useDispatch();
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    const user = useSelector((state) => state.auth.user);
 
     const [showPopup, setShowPopup] = useState(false);
     const [popupMessage, setPopupMessage] = useState("");
@@ -23,19 +29,45 @@ function ProductCard({ product }) {
         setShowPopup(true);
     };
 
+    // ADD TO CART
     const handleAddToCart = async () => {
+        // Check login
+        if (!user?.id) {
+            navigate("/login", {
+                state: {
+                    from: location.pathname,
+                    message: "Please login to add products to your cart."
+                }
+            });
+            return;
+        }
+
         try {
             const result = await addProduct(product);
 
             if (result !== false) {
                 showSuccess("Added to Cart!");
+            } else {
+                showSuccess("Product stock limit reached!");
             }
         } catch (error) {
-            alert("Unable to add product to cart.");
+            console.error("Add to cart error:", error);
+            showSuccess("Unable to add product to cart.");
         }
     };
 
+    // WISHLIST
     const handleWishlist = () => {
+        if (!user?.id) {
+            navigate("/login", {
+                state: {
+                    from: location.pathname,
+                    message: "Please login to use your wishlist."
+                }
+            });
+            return;
+        }
+
         dispatch(addToWishlist(product));
 
         setHeartKey((prev) => prev + 1);
@@ -86,7 +118,11 @@ function ProductCard({ product }) {
 
                     <button
                         onClick={handleAddToCart}
-                        disabled={product.stock <= 0 || isLoading || isSaving}
+                        disabled={
+                            product.stock <= 0 ||
+                            isLoading ||
+                            isSaving
+                        }
                         className="product-add-button"
                     >
                         {isSaving ? "Saving..." : "Add to Cart 🛒"}
@@ -96,9 +132,13 @@ function ProductCard({ product }) {
                         onClick={handleWishlist}
                         className="product-wishlist-button"
                     >
-                        <span key={heartKey} className="wishlist-heart-animation">
+                        <span
+                            key={heartKey}
+                            className="wishlist-heart-animation"
+                        >
                             🛒
                         </span>
+
                         Add to Wishlist
                     </button>
 

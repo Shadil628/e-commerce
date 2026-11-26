@@ -1,0 +1,70 @@
+
+/* ===================================
+   REGISTER PAGE CUSTOM STYLING
+=================================== */
+
+.register-page {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.register-card {
+    max-width: 1050px;
+    min-height: 620px;
+}
+
+/* Slightly compact welcome section */
+
+.register-card .login-welcome {
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+/* Register form section */
+
+.register-form-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* Heading */
+
+.register-form-section .login-heading {
+    margin-bottom: 25px;
+}
+
+.register-form-section .login-heading h2 {
+    font-size: 34px;
+}
+
+/* Input spacing */
+
+.register-form-section .login-input-group {
+    margin-bottom: 19px;
+}
+
+/* Register button */
+
+.register-submit-button {
+    margin-top: 24px;
+}
+
+/* Mobile */
+
+@media (max-width: 650px) {
+    .register-page {
+        padding: 15px;
+    }
+
+    .register-card {
+        min-height: auto;
+    }
+
+    .register-form-section {
+        padding: 32px 25px;
+    }
+
+    .register-form-section .login-heading h2 {
+        font-size: 30px;
+    }
+}

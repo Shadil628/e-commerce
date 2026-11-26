@@ -1,0 +1,781 @@
+
+/* ===================================
+   LOGIN PAGE BACKGROUND
+=================================== */
+
+.login-page {
+    min-height: 100vh;
+    width: 100%;
+    padding: 35px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(255, 255, 255, 0.10),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #174D38,
+            #103B2B,
+            #0b3022
+        );
+
+    overflow: hidden;
+}
+
+
+/* ===================================
+   MAIN LOGIN CARD
+=================================== */
+
+.login-card {
+    width: 100%;
+    max-width: 1050px;
+    min-height: 570px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    background: #ffffff;
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 30px 80px rgba(0, 0, 0, 0.28),
+        0 8px 25px rgba(0, 0, 0, 0.12);
+
+    animation: loginCardEnter 0.8s ease both;
+}
+
+
+/* ===================================
+   LEFT WELCOME SECTION
+=================================== */
+
+.login-welcome {
+    position: relative;
+    z-index: 1;
+
+    padding: 48px 45px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            145deg,
+            #226c4d,
+            #174D38 55%,
+            #103b2b
+        );
+
+    overflow: hidden;
+}
+
+
+/* CURVED EDGE */
+
+.login-welcome::after {
+    content: "";
+
+    position: absolute;
+    z-index: -1;
+
+    top: -12%;
+    right: -105px;
+
+    width: 190px;
+    height: 124%;
+
+    background: #ffffff;
+
+    border-radius: 50%;
+}
+
+
+/* BRAND */
+
+.login-brand {
+    position: relative;
+    z-index: 3;
+}
+
+.login-brand a {
+    color: #ffffff;
+
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: -1px;
+
+    text-decoration: none;
+}
+
+.login-brand a span {
+    color: #CBCBCB;
+}
+
+
+/* WELCOME CONTENT */
+
+.welcome-content {
+    position: relative;
+    z-index: 3;
+
+    max-width: 390px;
+
+    margin-top: 35px;
+    margin-bottom: 35px;
+
+    animation: welcomeEnter 1s ease both;
+}
+
+.welcome-label {
+    color: #CBCBCB;
+
+    font-size: 15px;
+    font-weight: 800;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 18px;
+}
+
+.welcome-content h1 {
+    color: #ffffff;
+
+    font-size: clamp(30px, 4vw, 43px);
+    font-weight: 900;
+
+    line-height: 1.2;
+    letter-spacing: 1px;
+
+    margin-bottom: 22px;
+}
+
+.welcome-description {
+    max-width: 330px;
+
+    color: rgba(255, 255, 255, 0.72);
+
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+
+/* FOOTER */
+
+.welcome-footer {
+    position: relative;
+    z-index: 3;
+
+    color: #CBCBCB;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+
+/* ===================================
+   DECORATIVE CIRCLES
+=================================== */
+
+.circle {
+    position: absolute;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+    background: linear-gradient(
+        145deg,
+        rgba(203, 203, 203, 0.25),
+        rgba(255, 255, 255, 0.04)
+    );
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    backdrop-filter: blur(3px);
+}
+
+.circle-one {
+    width: 190px;
+    height: 190px;
+
+    right: -55px;
+    bottom: -60px;
+
+    animation: circleFloat 7s ease-in-out infinite;
+}
+
+.circle-two {
+    width: 135px;
+    height: 135px;
+
+    left: -65px;
+    bottom: 30px;
+
+    background: rgba(203, 203, 203, 0.10);
+
+    animation: circleFloat 8s ease-in-out infinite reverse;
+}
+
+.circle-three {
+    width: 85px;
+    height: 85px;
+
+    right: 75px;
+    top: 35px;
+
+    background: rgba(255, 255, 255, 0.07);
+
+    animation: circleFloat 6s ease-in-out infinite;
+}
+
+
+/* ===================================
+   RIGHT LOGIN SECTION
+=================================== */
+
+.login-form-section {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 55px 55px 55px 65px;
+
+    background: #ffffff;
+}
+
+.login-form-container {
+    width: 100%;
+    max-width: 390px;
+
+    animation: formEnter 0.9s ease both;
+}
+
+
+/* HEADING */
+
+.login-heading {
+    margin-bottom: 32px;
+}
+
+.login-heading h2 {
+    color: #242424;
+
+    font-size: 38px;
+    font-weight: 900;
+
+    letter-spacing: -1px;
+
+    margin-bottom: 8px;
+}
+
+.login-heading p {
+    color: #888888;
+
+    font-size: 12px;
+}
+
+
+/* ===================================
+   INPUT FIELDS
+=================================== */
+
+.login-input-group {
+    margin-bottom: 23px;
+}
+
+.login-input-group label {
+    display: block;
+
+    color: #444444;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    margin-bottom: 9px;
+}
+
+.login-input-wrapper {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 53px;
+
+    background: #F2F2F2;
+
+    border: 1px solid transparent;
+    border-radius: 9px;
+
+    transition:
+        border-color 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease,
+        transform 0.3s ease;
+}
+
+.login-input-wrapper:focus-within {
+    background: #ffffff;
+
+    border-color: #174D38;
+
+    box-shadow: 0 0 0 4px rgba(23, 77, 56, 0.09);
+
+    transform: translateY(-2px);
+}
+
+.input-icon {
+    width: 20px;
+    height: 20px;
+
+    margin-left: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #174D38;
+}
+
+.input-icon svg {
+    width: 19px;
+    height: 19px;
+}
+
+.login-input-wrapper input {
+    width: 100%;
+    height: 100%;
+
+    padding: 0 14px;
+
+    color: #333333;
+
+    font-size: 13px;
+
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.login-input-wrapper input::placeholder {
+    color: #999999;
+}
+
+
+/* SHOW / HIDE PASSWORD */
+
+.password-toggle {
+    flex-shrink: 0;
+
+    margin-right: 14px;
+
+    color: #174D38;
+
+    font-size: 10px;
+    font-weight: 900;
+
+    letter-spacing: 0.5px;
+
+    background: none;
+    border: none;
+
+    cursor: pointer;
+
+    transition: color 0.3s ease;
+}
+
+.password-toggle:hover {
+    color: #4D1717;
+}
+
+
+/* ===================================
+   ERROR AND NOTICE
+=================================== */
+
+.login-error {
+    padding: 12px 14px;
+    margin-bottom: 18px;
+
+    color: #4D1717;
+
+    background: #fff0f0;
+
+    border-left: 3px solid #4D1717;
+    border-radius: 5px;
+
+    font-size: 12px;
+
+    animation: messageEnter 0.3s ease;
+}
+
+.login-notice {
+    padding: 12px 14px;
+    margin-bottom: 20px;
+
+    color: #174D38;
+
+    background: #edf5ef;
+
+    border-left: 3px solid #174D38;
+    border-radius: 5px;
+
+    font-size: 12px;
+}
+
+
+/* ===================================
+   LOGIN BUTTON
+=================================== */
+
+.login-submit-button {
+    width: 100%;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    margin-top: 28px;
+
+    color: #ffffff;
+
+    background: #174D38;
+
+    border: 1px solid #174D38;
+    border-radius: 9px;
+
+    font-size: 12px;
+    font-weight: 900;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    box-shadow: 0 7px 18px rgba(23, 77, 56, 0.16);
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.login-submit-button:hover:not(:disabled) {
+    background: #103b2b;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 12px 25px rgba(23, 77, 56, 0.25);
+}
+
+.login-submit-button:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+.login-submit-button:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+
+/* LOADING SPINNER */
+
+.login-spinner {
+    width: 16px;
+    height: 16px;
+
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-top-color: #ffffff;
+
+    border-radius: 50%;
+
+    animation: loginSpin 0.7s linear infinite;
+}
+
+
+/* ===================================
+   REGISTER AND HOME LINKS
+=================================== */
+
+.login-register {
+    margin-top: 30px;
+
+    text-align: center;
+}
+
+.login-register p {
+    color: #888888;
+
+    font-size: 12px;
+}
+
+.login-register a {
+    display: inline-block;
+
+    margin-left: 5px;
+
+    color: #174D38;
+
+    font-weight: 900;
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+.login-register a:hover {
+    color: #4D1717;
+}
+
+.login-back-home {
+    display: block;
+
+    width: fit-content;
+
+    margin: 22px auto 0;
+
+    color: #aaaaaa;
+
+    font-size: 11px;
+    text-decoration: none;
+
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.login-back-home:hover {
+    color: #174D38;
+    transform: translateX(-3px);
+}
+
+
+/* ===================================
+   ANIMATIONS
+=================================== */
+
+@keyframes loginCardEnter {
+    from {
+        opacity: 0;
+        transform: translateY(25px) scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes welcomeEnter {
+    from {
+        opacity: 0;
+        transform: translateX(-25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes formEnter {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes circleFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-18px);
+    }
+}
+
+@keyframes loginSpin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes messageEnter {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ===================================
+   TABLET RESPONSIVE
+=================================== */
+
+@media (max-width: 900px) {
+    .login-card {
+        max-width: 760px;
+        min-height: 520px;
+    }
+
+    .login-welcome {
+        padding: 38px 30px;
+    }
+
+    .login-form-section {
+        padding: 40px 35px 40px 45px;
+    }
+
+    .login-welcome::after {
+        right: -125px;
+    }
+
+    .welcome-content h1 {
+        font-size: 32px;
+    }
+}
+
+
+/* ===================================
+   MOBILE RESPONSIVE
+=================================== */
+
+@media (max-width: 650px) {
+    .login-page {
+        padding: 20px 14px;
+        align-items: flex-start;
+    }
+
+    .login-card {
+        max-width: 450px;
+
+        grid-template-columns: 1fr;
+
+        border-radius: 16px;
+    }
+
+    .login-welcome {
+        min-height: 260px;
+
+        padding: 28px 25px;
+    }
+
+    .login-welcome::after {
+        display: none;
+    }
+
+    .login-brand a {
+        font-size: 24px;
+    }
+
+    .welcome-content {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .welcome-label {
+        font-size: 11px;
+        margin-bottom: 12px;
+    }
+
+    .welcome-content h1 {
+        font-size: 27px;
+        margin-bottom: 12px;
+    }
+
+    .welcome-description {
+        font-size: 11px;
+        max-width: 280px;
+    }
+
+    .welcome-footer {
+        font-size: 9px;
+    }
+
+    .circle-one {
+        width: 110px;
+        height: 110px;
+        right: -30px;
+        bottom: -45px;
+    }
+
+    .circle-two {
+        width: 80px;
+        height: 80px;
+        left: auto;
+        right: 90px;
+        bottom: -35px;
+    }
+
+    .circle-three {
+        width: 55px;
+        height: 55px;
+        right: 25px;
+        top: 20px;
+    }
+
+    .login-form-section {
+        padding: 38px 25px 35px;
+    }
+
+    .login-heading {
+        margin-bottom: 25px;
+    }
+
+    .login-heading h2 {
+        font-size: 32px;
+    }
+
+    .login-input-group {
+        margin-bottom: 19px;
+    }
+}
+
+
+/* REDUCE MOTION FOR ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+    .login-card,
+    .welcome-content,
+    .login-form-container,
+    .circle,
+    .login-spinner {
+        animation: none !important;
+    }
+
+    .login-input-wrapper,
+    .login-submit-button,
+    .login-register a,
+    .login-back-home {
+        transition: none !important;
+    }
+}
