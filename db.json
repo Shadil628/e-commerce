@@ -10,48 +10,16 @@
       "stock": 20,
       "image": null,
       "colors": [
-        {
-          "name": "Black",
-          "hex": "#252525",
-          "images": []
-        },
-        {
-          "name": "Blue",
-          "hex": "#A7C7E7",
-          "images": []
-        },
-        {
-          "name": "Pink",
-          "hex": "#F4C7D5",
-          "images": []
-        },
-        {
-          "name": "Green",
-          "hex": "#D0E5D2",
-          "images": []
-        },
-        {
-          "name": "Yellow",
-          "hex": "#F5E6A8",
-          "images": []
-        }
+        { "name": "Black", "hex": "#252525", "images": [] },
+        { "name": "Blue", "hex": "#A7C7E7", "images": [] },
+        { "name": "Pink", "hex": "#F4C7D5", "images": [] },
+        { "name": "Green", "hex": "#D0E5D2", "images": [] },
+        { "name": "Yellow", "hex": "#F5E6A8", "images": [] }
       ],
       "storageOptions": [
-        {
-          "value": "128GB",
-          "price": 55000,
-          "stock": 20
-        },
-        {
-          "value": "256GB",
-          "price": null,
-          "stock": null
-        },
-        {
-          "value": "512GB",
-          "price": null,
-          "stock": null
-        }
+        { "value": "128GB", "price": 55000, "stock": 20 },
+        { "value": "256GB", "price": null, "stock": null },
+        { "value": "512GB", "price": null, "stock": null }
       ],
       "specifications": {
         "Display": "6.1-inch Super Retina XDR OLED",
@@ -74,38 +42,14 @@
       "stock": 8,
       "image": null,
       "colors": [
-        {
-          "name": "Onyx Black",
-          "hex": "#252525",
-          "images": []
-        },
-        {
-          "name": "Marble Gray",
-          "hex": "#B8B8B8",
-          "images": []
-        },
-        {
-          "name": "Cobalt Violet",
-          "hex": "#8B7AAE",
-          "images": []
-        },
-        {
-          "name": "Amber Yellow",
-          "hex": "#E8D28B",
-          "images": []
-        }
+        { "name": "Onyx Black", "hex": "#252525", "images": [] },
+        { "name": "Marble Gray", "hex": "#B8B8B8", "images": [] },
+        { "name": "Cobalt Violet", "hex": "#8B7AAE", "images": [] },
+        { "name": "Amber Yellow", "hex": "#E8D28B", "images": [] }
       ],
       "storageOptions": [
-        {
-          "value": "128GB",
-          "price": null,
-          "stock": null
-        },
-        {
-          "value": "256GB",
-          "price": 65000,
-          "stock": 8
-        }
+        { "value": "128GB", "price": null, "stock": null },
+        { "value": "256GB", "price": 65000, "stock": 8 }
       ],
       "specifications": {
         "Display": "6.2-inch Dynamic AMOLED 2X",
@@ -130,33 +74,13 @@
       "stock": 5,
       "image": null,
       "colors": [
-        {
-          "name": "Natural Silver",
-          "hex": "#C0C0C0",
-          "images": []
-        },
-        {
-          "name": "Jet Black",
-          "hex": "#252525",
-          "images": []
-        }
+        { "name": "Natural Silver", "hex": "#C0C0C0", "images": [] },
+        { "name": "Jet Black", "hex": "#252525", "images": [] }
       ],
       "storageOptions": [
-        {
-          "value": "256GB SSD",
-          "price": null,
-          "stock": null
-        },
-        {
-          "value": "512GB SSD",
-          "price": null,
-          "stock": null
-        },
-        {
-          "value": "1TB SSD",
-          "price": null,
-          "stock": null
-        }
+        { "value": "256GB SSD", "price": null, "stock": null },
+        { "value": "512GB SSD", "price": null, "stock": null },
+        { "value": "1TB SSD", "price": null, "stock": null }
       ],
       "specifications": {
         "Model": "HP 15 Series",
@@ -185,11 +109,7 @@
             "https://sony.scene7.com/is/image/sonyglobalsolutions/00-7?$large360ViewerImage$="
           ]
         },
-        {
-          "name": "White",
-          "hex": "#F2F2F2",
-          "images": []
-        }
+        { "name": "White", "hex": "#F2F2F2", "images": [] }
       ],
       "specifications": {
         "Model": "WH-CH520",
@@ -218,11 +138,7 @@
             "https://in.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw838c5c35/2.JBL_Tune_770NC_Product%20Image_Front_Black.png?sh=535&sw=535"
           ]
         },
-        {
-          "name": "White",
-          "hex": "#F2F2F2",
-          "images": []
-        }
+        { "name": "White", "hex": "#F2F2F2", "images": [] }
       ],
       "specifications": {
         "Model": "JBL Tune 770NC",
@@ -245,16 +161,8 @@
       "stock": 12,
       "image": null,
       "colors": [
-        {
-          "name": "Black",
-          "hex": "#252525",
-          "images": []
-        },
-        {
-          "name": "Silver",
-          "hex": "#C0C0C0",
-          "images": []
-        }
+        { "name": "Black", "hex": "#252525", "images": [] },
+        { "name": "Silver", "hex": "#C0C0C0", "images": [] }
       ],
       "specifications": {
         "Model": "Galaxy Watch FE 40mm",
@@ -277,21 +185,9 @@
       "stock": 12,
       "image": "https://res.cloudinary.com/telia-pim/image/upload/v1725969455/pood/apple/nutitelefonid/iphone-16/sinine/128-gb/myec3hxa/apple-iphone-16-nutitelefon-sinine-eest-tagant-koos.png",
       "colors": [
-        {
-          "name": "Black",
-          "hex": "#252525",
-          "images": []
-        },
-        {
-          "name": "White",
-          "hex": "#F2F2F2",
-          "images": []
-        },
-        {
-          "name": "Pink",
-          "hex": "#F4C7D5",
-          "images": []
-        },
+        { "name": "Black", "hex": "#252525", "images": [] },
+        { "name": "White", "hex": "#F2F2F2", "images": [] },
+        { "name": "Pink", "hex": "#F4C7D5", "images": [] },
         {
           "name": "Teal",
           "hex": "#8FBDB5",
@@ -299,28 +195,12 @@
             "https://res.cloudinary.com/telia-pim/image/upload/v1725969455/pood/apple/nutitelefonid/iphone-16/sinine/128-gb/myec3hxa/apple-iphone-16-nutitelefon-sinine-eest-tagant-koos.png"
           ]
         },
-        {
-          "name": "Ultramarine",
-          "hex": "#405B9A",
-          "images": []
-        }
+        { "name": "Ultramarine", "hex": "#405B9A", "images": [] }
       ],
       "storageOptions": [
-        {
-          "value": "128GB",
-          "price": 69900,
-          "stock": 12
-        },
-        {
-          "value": "256GB",
-          "price": null,
-          "stock": null
-        },
-        {
-          "value": "512GB",
-          "price": null,
-          "stock": null
-        }
+        { "value": "128GB", "price": 69900, "stock": 12 },
+        { "value": "256GB", "price": null, "stock": null },
+        { "value": "512GB", "price": null, "stock": null }
       ],
       "specifications": {
         "Display": "6.1-inch Super Retina XDR OLED",
@@ -343,48 +223,16 @@
       "stock": 8,
       "image": null,
       "colors": [
-        {
-          "name": "Black Titanium",
-          "hex": "#454545",
-          "images": []
-        },
-        {
-          "name": "White Titanium",
-          "hex": "#D8D8D8",
-          "images": []
-        },
-        {
-          "name": "Natural Titanium",
-          "hex": "#A9A49B",
-          "images": []
-        },
-        {
-          "name": "Desert Titanium",
-          "hex": "#BFA58B",
-          "images": []
-        }
+        { "name": "Black Titanium", "hex": "#454545", "images": [] },
+        { "name": "White Titanium", "hex": "#D8D8D8", "images": [] },
+        { "name": "Natural Titanium", "hex": "#A9A49B", "images": [] },
+        { "name": "Desert Titanium", "hex": "#BFA58B", "images": [] }
       ],
       "storageOptions": [
-        {
-          "value": "128GB",
-          "price": null,
-          "stock": null
-        },
-        {
-          "value": "256GB",
-          "price": 119900,
-          "stock": 8
-        },
-        {
-          "value": "512GB",
-          "price": null,
-          "stock": null
-        },
-        {
-          "value": "1TB",
-          "price": null,
-          "stock": null
-        }
+        { "value": "128GB", "price": null, "stock": null },
+        { "value": "256GB", "price": 119900, "stock": 8 },
+        { "value": "512GB", "price": null, "stock": null },
+        { "value": "1TB", "price": null, "stock": null }
       ],
       "specifications": {
         "Display": "6.3-inch Super Retina XDR OLED",
@@ -408,21 +256,9 @@
       "stock": 6,
       "image": "https://static01.galaxus.com/productimages/5/9/1/2/4/1/9/2/6/5/8/3/0/9/0/0/6/2/7ff4ca9c-9ea3-4318-b04a-51a391dfaedc_cropped.jpg_sea.jpeg",
       "colors": [
-        {
-          "name": "Black Titanium",
-          "hex": "#454545",
-          "images": []
-        },
-        {
-          "name": "White Titanium",
-          "hex": "#D8D8D8",
-          "images": []
-        },
-        {
-          "name": "Natural Titanium",
-          "hex": "#A9A49B",
-          "images": []
-        },
+        { "name": "Black Titanium", "hex": "#454545", "images": [] },
+        { "name": "White Titanium", "hex": "#D8D8D8", "images": [] },
+        { "name": "Natural Titanium", "hex": "#A9A49B", "images": [] },
         {
           "name": "Desert Titanium",
           "hex": "#BFA58B",
@@ -432,21 +268,9 @@
         }
       ],
       "storageOptions": [
-        {
-          "value": "256GB",
-          "price": 144900,
-          "stock": 6
-        },
-        {
-          "value": "512GB",
-          "price": null,
-          "stock": null
-        },
-        {
-          "value": "1TB",
-          "price": null,
-          "stock": null
-        }
+        { "value": "256GB", "price": 144900, "stock": 6 },
+        { "value": "512GB", "price": null, "stock": null },
+        { "value": "1TB", "price": null, "stock": null }
       ],
       "specifications": {
         "Display": "6.9-inch Super Retina XDR OLED",
@@ -477,43 +301,15 @@
             "https://bf1af2.akinoncloudcdn.com/products/2024/09/19/32504/8daa3944-5b89-4647-92dc-6e841ad165cf_size3840_cropCenter.jpg"
           ]
         },
-        {
-          "name": "Blue",
-          "hex": "#A7C7E7",
-          "images": []
-        },
-        {
-          "name": "Green",
-          "hex": "#D0E5D2",
-          "images": []
-        },
-        {
-          "name": "Yellow",
-          "hex": "#F5E6A8",
-          "images": []
-        },
-        {
-          "name": "Pink",
-          "hex": "#F4C7D5",
-          "images": []
-        }
+        { "name": "Blue", "hex": "#A7C7E7", "images": [] },
+        { "name": "Green", "hex": "#D0E5D2", "images": [] },
+        { "name": "Yellow", "hex": "#F5E6A8", "images": [] },
+        { "name": "Pink", "hex": "#F4C7D5", "images": [] }
       ],
       "storageOptions": [
-        {
-          "value": "128GB",
-          "price": 69900,
-          "stock": 10
-        },
-        {
-          "value": "256GB",
-          "price": null,
-          "stock": null
-        },
-        {
-          "value": "512GB",
-          "price": null,
-          "stock": null
-        }
+        { "value": "128GB", "price": 69900, "stock": 10 },
+        { "value": "256GB", "price": null, "stock": null },
+        { "value": "512GB", "price": null, "stock": null }
       ],
       "specifications": {
         "Display": "6.7-inch Super Retina XDR OLED",
@@ -565,21 +361,9 @@
         }
       ],
       "storageOptions": [
-        {
-          "value": "128GB",
-          "price": null,
-          "stock": null
-        },
-        {
-          "value": "256GB",
-          "price": 80999,
-          "stock": 9
-        },
-        {
-          "value": "512GB",
-          "price": null,
-          "stock": null
-        }
+        { "value": "128GB", "price": null, "stock": null },
+        { "value": "256GB", "price": 80999, "stock": 9 },
+        { "value": "512GB", "price": null, "stock": null }
       ],
       "specifications": {
         "Display": "6.2-inch Dynamic AMOLED 2X",
@@ -635,21 +419,9 @@
         }
       ],
       "storageOptions": [
-        {
-          "value": "256GB",
-          "price": 129999,
-          "stock": 5
-        },
-        {
-          "value": "512GB",
-          "price": null,
-          "stock": null
-        },
-        {
-          "value": "1TB",
-          "price": null,
-          "stock": null
-        }
+        { "value": "256GB", "price": 129999, "stock": 5 },
+        { "value": "512GB", "price": null, "stock": null },
+        { "value": "1TB", "price": null, "stock": null }
       ],
       "specifications": {
         "Display": "6.9-inch Dynamic AMOLED 2X",
@@ -681,33 +453,13 @@
             "https://mobileplanet.ua/uploads/product/2025-3-14/samsung-galaxy-a56-5g-8-256gb-awesome-graphite-sm-3387041.webp"
           ]
         },
-        {
-          "name": "Awesome Lightgray",
-          "hex": "#C5C5C5",
-          "images": []
-        },
-        {
-          "name": "Awesome Olive",
-          "hex": "#8B9671",
-          "images": []
-        },
-        {
-          "name": "Awesome Pink",
-          "hex": "#D9A9B9",
-          "images": []
-        }
+        { "name": "Awesome Lightgray", "hex": "#C5C5C5", "images": [] },
+        { "name": "Awesome Olive", "hex": "#8B9671", "images": [] },
+        { "name": "Awesome Pink", "hex": "#D9A9B9", "images": [] }
       ],
       "storageOptions": [
-        {
-          "value": "128GB",
-          "price": null,
-          "stock": null
-        },
-        {
-          "value": "256GB",
-          "price": 38999,
-          "stock": 14
-        }
+        { "value": "128GB", "price": null, "stock": null },
+        { "value": "256GB", "price": 38999, "stock": 14 }
       ],
       "specifications": {
         "Display": "6.7-inch Super AMOLED",
@@ -733,16 +485,8 @@
       "stock": 7,
       "image": "https://thumb.pccomponentes.com/w-530-530/articles/1086/10866329/1178-oneplus-13-5g-16gb-512gb-682-blanco-9e9cd70d-7c69-4f5e-a805-04fff4498f41.jpg",
       "colors": [
-        {
-          "name": "Midnight Ocean",
-          "hex": "#182B45",
-          "images": []
-        },
-        {
-          "name": "Black Eclipse",
-          "hex": "#252525",
-          "images": []
-        },
+        { "name": "Midnight Ocean", "hex": "#182B45", "images": [] },
+        { "name": "Black Eclipse", "hex": "#252525", "images": [] },
         {
           "name": "Arctic Dawn",
           "hex": "#E5E5E5",
@@ -752,21 +496,9 @@
         }
       ],
       "storageOptions": [
-        {
-          "value": "256GB",
-          "price": null,
-          "stock": null
-        },
-        {
-          "value": "512GB",
-          "price": 69999,
-          "stock": 7
-        },
-        {
-          "value": "1TB",
-          "price": null,
-          "stock": null
-        }
+        { "value": "256GB", "price": null, "stock": null },
+        { "value": "512GB", "price": 69999, "stock": 7 },
+        { "value": "1TB", "price": null, "stock": null }
       ],
       "specifications": {
         "Display": "6.82-inch QHD+ LTPO AMOLED",
@@ -799,33 +531,13 @@
             "https://digitalcontent.api.tesco.com/v2/media/tescomobile/2450797b-6b36-4e40-897a-eaf8e46aae10/Pixel%2B9%2BObsidian%2BHERO.jpeg?h=960&w=960"
           ]
         },
-        {
-          "name": "Porcelain",
-          "hex": "#E8E3D8",
-          "images": []
-        },
-        {
-          "name": "Wintergreen",
-          "hex": "#B7CFC2",
-          "images": []
-        },
-        {
-          "name": "Peony",
-          "hex": "#E8B5BE",
-          "images": []
-        }
+        { "name": "Porcelain", "hex": "#E8E3D8", "images": [] },
+        { "name": "Wintergreen", "hex": "#B7CFC2", "images": [] },
+        { "name": "Peony", "hex": "#E8B5BE", "images": [] }
       ],
       "storageOptions": [
-        {
-          "value": "128GB",
-          "price": 79999,
-          "stock": 8
-        },
-        {
-          "value": "256GB",
-          "price": null,
-          "stock": null
-        }
+        { "value": "128GB", "price": 79999, "stock": 8 },
+        { "value": "256GB", "price": null, "stock": null }
       ],
       "specifications": {
         "Display": "6.3-inch Actua OLED",
@@ -850,38 +562,14 @@
       "stock": 16,
       "image": null,
       "colors": [
-        {
-          "name": "Midnight Black",
-          "hex": "#252525",
-          "images": []
-        },
-        {
-          "name": "Phantom Purple",
-          "hex": "#82749B",
-          "images": []
-        },
-        {
-          "name": "Titan Black",
-          "hex": "#454545",
-          "images": []
-        }
+        { "name": "Midnight Black", "hex": "#252525", "images": [] },
+        { "name": "Phantom Purple", "hex": "#82749B", "images": [] },
+        { "name": "Titan Black", "hex": "#454545", "images": [] }
       ],
       "storageOptions": [
-        {
-          "value": "128GB",
-          "price": null,
-          "stock": null
-        },
-        {
-          "value": "256GB",
-          "price": 24999,
-          "stock": 16
-        },
-        {
-          "value": "512GB",
-          "price": null,
-          "stock": null
-        }
+        { "value": "128GB", "price": null, "stock": null },
+        { "value": "256GB", "price": 24999, "stock": 16 },
+        { "value": "512GB", "price": null, "stock": null }
       ],
       "specifications": {
         "Display": "AMOLED Display",
@@ -901,43 +589,15 @@
       "stock": 7,
       "image": null,
       "colors": [
-        {
-          "name": "Sky Blue",
-          "hex": "#A9C5D9",
-          "images": []
-        },
-        {
-          "name": "Silver",
-          "hex": "#C0C0C0",
-          "images": []
-        },
-        {
-          "name": "Starlight",
-          "hex": "#E4DCCB",
-          "images": []
-        },
-        {
-          "name": "Midnight",
-          "hex": "#343A40",
-          "images": []
-        }
+        { "name": "Sky Blue", "hex": "#A9C5D9", "images": [] },
+        { "name": "Silver", "hex": "#C0C0C0", "images": [] },
+        { "name": "Starlight", "hex": "#E4DCCB", "images": [] },
+        { "name": "Midnight", "hex": "#343A40", "images": [] }
       ],
       "storageOptions": [
-        {
-          "value": "256GB SSD",
-          "price": 99900,
-          "stock": 7
-        },
-        {
-          "value": "512GB SSD",
-          "price": null,
-          "stock": null
-        },
-        {
-          "value": "1TB SSD",
-          "price": null,
-          "stock": null
-        }
+        { "value": "256GB SSD", "price": 99900, "stock": 7 },
+        { "value": "512GB SSD", "price": null, "stock": null },
+        { "value": "1TB SSD", "price": null, "stock": null }
       ],
       "specifications": {
         "Display": "13.6-inch Liquid Retina",
@@ -961,33 +621,13 @@
       "stock": 4,
       "image": null,
       "colors": [
-        {
-          "name": "Space Black",
-          "hex": "#292929",
-          "images": []
-        },
-        {
-          "name": "Silver",
-          "hex": "#C0C0C0",
-          "images": []
-        }
+        { "name": "Space Black", "hex": "#292929", "images": [] },
+        { "name": "Silver", "hex": "#C0C0C0", "images": [] }
       ],
       "storageOptions": [
-        {
-          "value": "512GB SSD",
-          "price": 169900,
-          "stock": 4
-        },
-        {
-          "value": "1TB SSD",
-          "price": null,
-          "stock": null
-        },
-        {
-          "value": "2TB SSD",
-          "price": null,
-          "stock": null
-        }
+        { "value": "512GB SSD", "price": 169900, "stock": 4 },
+        { "value": "1TB SSD", "price": null, "stock": null },
+        { "value": "2TB SSD", "price": null, "stock": null }
       ],
       "specifications": {
         "Display": "14.2-inch Liquid Retina XDR",
@@ -1011,43 +651,15 @@
       "stock": 6,
       "image": null,
       "colors": [
-        {
-          "name": "Midnight",
-          "hex": "#343A40",
-          "images": []
-        },
-        {
-          "name": "Starlight",
-          "hex": "#E4DCCB",
-          "images": []
-        },
-        {
-          "name": "Silver",
-          "hex": "#C0C0C0",
-          "images": []
-        },
-        {
-          "name": "Space Gray",
-          "hex": "#777777",
-          "images": []
-        }
+        { "name": "Midnight", "hex": "#343A40", "images": [] },
+        { "name": "Starlight", "hex": "#E4DCCB", "images": [] },
+        { "name": "Silver", "hex": "#C0C0C0", "images": [] },
+        { "name": "Space Gray", "hex": "#777777", "images": [] }
       ],
       "storageOptions": [
-        {
-          "value": "256GB SSD",
-          "price": 89900,
-          "stock": 6
-        },
-        {
-          "value": "512GB SSD",
-          "price": null,
-          "stock": null
-        },
-        {
-          "value": "1TB SSD",
-          "price": null,
-          "stock": null
-        }
+        { "value": "256GB SSD", "price": 89900, "stock": 6 },
+        { "value": "512GB SSD", "price": null, "stock": null },
+        { "value": "1TB SSD", "price": null, "stock": null }
       ],
       "specifications": {
         "Display": "13.6-inch Liquid Retina",
@@ -1070,33 +682,13 @@
       "stock": 10,
       "image": null,
       "colors": [
-        {
-          "name": "Platinum Silver",
-          "hex": "#C0C0C0",
-          "images": []
-        },
-        {
-          "name": "Carbon Black",
-          "hex": "#292929",
-          "images": []
-        }
+        { "name": "Platinum Silver", "hex": "#C0C0C0", "images": [] },
+        { "name": "Carbon Black", "hex": "#292929", "images": [] }
       ],
       "storageOptions": [
-        {
-          "value": "256GB SSD",
-          "price": null,
-          "stock": null
-        },
-        {
-          "value": "512GB SSD",
-          "price": 54990,
-          "stock": 10
-        },
-        {
-          "value": "1TB SSD",
-          "price": null,
-          "stock": null
-        }
+        { "value": "256GB SSD", "price": null, "stock": null },
+        { "value": "512GB SSD", "price": 54990, "stock": 10 },
+        { "value": "1TB SSD", "price": null, "stock": null }
       ],
       "specifications": {
         "Display": "15.6-inch Full HD",
@@ -1118,33 +710,13 @@
       "stock": 5,
       "image": null,
       "colors": [
-        {
-          "name": "Platinum",
-          "hex": "#C0C0C0",
-          "images": []
-        },
-        {
-          "name": "Graphite",
-          "hex": "#454545",
-          "images": []
-        }
+        { "name": "Platinum", "hex": "#C0C0C0", "images": [] },
+        { "name": "Graphite", "hex": "#454545", "images": [] }
       ],
       "storageOptions": [
-        {
-          "value": "512GB SSD",
-          "price": null,
-          "stock": null
-        },
-        {
-          "value": "1TB SSD",
-          "price": 129990,
-          "stock": 5
-        },
-        {
-          "value": "2TB SSD",
-          "price": null,
-          "stock": null
-        }
+        { "value": "512GB SSD", "price": null, "stock": null },
+        { "value": "1TB SSD", "price": 129990, "stock": 5 },
+        { "value": "2TB SSD", "price": null, "stock": null }
       ],
       "specifications": {
         "Display": "13.4-inch",
@@ -1166,33 +738,13 @@
       "stock": 9,
       "image": null,
       "colors": [
-        {
-          "name": "Natural Silver",
-          "hex": "#C0C0C0",
-          "images": []
-        },
-        {
-          "name": "Warm Gold",
-          "hex": "#C8AD83",
-          "images": []
-        }
+        { "name": "Natural Silver", "hex": "#C0C0C0", "images": [] },
+        { "name": "Warm Gold", "hex": "#C8AD83", "images": [] }
       ],
       "storageOptions": [
-        {
-          "value": "256GB SSD",
-          "price": null,
-          "stock": null
-        },
-        {
-          "value": "512GB SSD",
-          "price": 62990,
-          "stock": 9
-        },
-        {
-          "value": "1TB SSD",
-          "price": null,
-          "stock": null
-        }
+        { "value": "256GB SSD", "price": null, "stock": null },
+        { "value": "512GB SSD", "price": 62990, "stock": 9 },
+        { "value": "1TB SSD", "price": null, "stock": null }
       ],
       "specifications": {
         "Display": "15.6-inch Full HD",
@@ -1221,23 +773,11 @@
             "https://brightstarcomp.com/cdn/shop/files/Web_Victus_15_PBlue_4.jpg?v=1752551328&width=1946"
           ]
         },
-        {
-          "name": "Mica Silver",
-          "hex": "#B9B9B9",
-          "images": []
-        }
+        { "name": "Mica Silver", "hex": "#B9B9B9", "images": [] }
       ],
       "storageOptions": [
-        {
-          "value": "512GB SSD",
-          "price": 84990,
-          "stock": 6
-        },
-        {
-          "value": "1TB SSD",
-          "price": null,
-          "stock": null
-        }
+        { "value": "512GB SSD", "price": 84990, "stock": 6 },
+        { "value": "1TB SSD", "price": null, "stock": null }
       ],
       "specifications": {
         "Display": "15.6-inch Full HD",
@@ -1260,33 +800,13 @@
       "stock": 11,
       "image": null,
       "colors": [
-        {
-          "name": "Cool Silver",
-          "hex": "#C0C0C0",
-          "images": []
-        },
-        {
-          "name": "Indie Black",
-          "hex": "#252525",
-          "images": []
-        }
+        { "name": "Cool Silver", "hex": "#C0C0C0", "images": [] },
+        { "name": "Indie Black", "hex": "#252525", "images": [] }
       ],
       "storageOptions": [
-        {
-          "value": "256GB SSD",
-          "price": null,
-          "stock": null
-        },
-        {
-          "value": "512GB SSD",
-          "price": 49990,
-          "stock": 11
-        },
-        {
-          "value": "1TB SSD",
-          "price": null,
-          "stock": null
-        }
+        { "value": "256GB SSD", "price": null, "stock": null },
+        { "value": "512GB SSD", "price": 49990, "stock": 11 },
+        { "value": "1TB SSD", "price": null, "stock": null }
       ],
       "specifications": {
         "Display": "15.6-inch Full HD",
@@ -1308,33 +828,13 @@
       "stock": 4,
       "image": null,
       "colors": [
-        {
-          "name": "Eclipse Gray",
-          "hex": "#454545",
-          "images": []
-        },
-        {
-          "name": "Volt Green",
-          "hex": "#91B84A",
-          "images": []
-        }
+        { "name": "Eclipse Gray", "hex": "#454545", "images": [] },
+        { "name": "Volt Green", "hex": "#91B84A", "images": [] }
       ],
       "storageOptions": [
-        {
-          "value": "512GB SSD",
-          "price": null,
-          "stock": null
-        },
-        {
-          "value": "1TB SSD",
-          "price": 149990,
-          "stock": 4
-        },
-        {
-          "value": "2TB SSD",
-          "price": null,
-          "stock": null
-        }
+        { "value": "512GB SSD", "price": null, "stock": null },
+        { "value": "1TB SSD", "price": 149990, "stock": 4 },
+        { "value": "2TB SSD", "price": null, "stock": null }
       ],
       "specifications": {
         "Display": "16-inch Gaming Display",
@@ -1364,28 +864,12 @@
             "https://mc.bajajfinserv.in/media/catalog/product/8/3/83bf0048in_base.jpeg"
           ]
         },
-        {
-          "name": "Abyss Blue",
-          "hex": "#263C5A",
-          "images": []
-        }
+        { "name": "Abyss Blue", "hex": "#263C5A", "images": [] }
       ],
       "storageOptions": [
-        {
-          "value": "256GB SSD",
-          "price": null,
-          "stock": null
-        },
-        {
-          "value": "512GB SSD",
-          "price": 67990,
-          "stock": 8
-        },
-        {
-          "value": "1TB SSD",
-          "price": null,
-          "stock": null
-        }
+        { "value": "256GB SSD", "price": null, "stock": null },
+        { "value": "512GB SSD", "price": 67990, "stock": 8 },
+        { "value": "1TB SSD", "price": null, "stock": null }
       ],
       "specifications": {
         "Display": "Configuration Dependent",
